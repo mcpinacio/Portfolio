@@ -1,0 +1,110 @@
+@import 'src/assets/variables.scss';
+
+
+.about{
+	background-color: $background-colour-blue;
+
+	flex-flow: column;
+	display: flex;
+
+	justify-content: space-around;
+	align-items: center;
+
+	height: 70vh;
+
+	@include mq('tablet-wide') {
+		height: 80vh;
+	}
+
+	@include mq('desktop') {
+		height: 85vh;
+	}
+}
+
+.transition {
+	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
+}
+
+h1 {
+	@include accent-bold;
+	text-align: center;
+
+	font-size: 25px;
+	line-height: 30px;
+	
+	color: $normal-colour !important;
+
+	margin: 0px 0px;
+
+	@include mq('tablet') {
+		font-size: 30px;
+		line-height: 45px;
+	}
+
+	@include mq('tablet-wide') {
+		font-size: 35px;
+		line-height: 55px;
+	}
+	
+	@include mq('desktop') {
+		font-size: 40px;
+		line-height: 60px;
+
+		margin-top: 40px;
+	}
+
+	@include mq('desktop-wide') {
+		font-size: 45px;
+		line-height: 65px;
+
+		margin-top: 70px;
+	}
+
+	@include mq('desktop-super-wide') {
+		font-size: 55px;
+		line-height: 75px;
+
+		margin-top: 140px;
+	}
+}
+
+button{
+	box-shadow: 0px 0px 11px 0px rgba(16, 34, 60, 0.08);
+	
+	background-color: $accent-colour;
+
+	border-radius: 50px;
+	border: none;
+
+	font: 100% $normal-font;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 14px;
+	color: white;
+
+	padding: 20px 40px;
+
+	@include mq('tablet') {
+		font-size: 16px;
+	}
+
+	@include mq('desktop') {
+		font-size: 20px;
+		padding: 20px 50px;
+	}
+
+	@include mq('desktop-wide') {
+		font-size: 25px;
+		padding: 25px 60px;
+	}
+
+	@include mq('desktop-super-wide') {
+		font-size: 30px;
+		padding: 30px 80px;
+	}
+
+	&:hover{
+		transform: scale(1.15);
+	}
+
+}

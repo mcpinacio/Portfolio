@@ -1,0 +1,52 @@
+$breakpoints: (
+    "phone":        300px,
+    "phone-wide":   480px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px,
+    "desktop-super-wide": 1920px,
+) !default;
+
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+//colors
+$accent-colour: #DF7D91;
+$normal-colour: #10223C;
+$contacts-colour: white;
+$sections-colour: rgba(126, 189, 202, 0.6);
+$background-colour-blue: rgba(16, 34, 60, 0.04);
+$background-colour-pink: #F7BFB8;
+$background-colour-contacts: linear-gradient(60deg, #E9135E, #2AB8C6);
+
+//fonts
+$accent-font:'Lato', sans-serif;
+$normal-font: 'Quattrocento Sans', sans-serif;
+
+@mixin accent-bold {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+
+	color: #DF7D91;
+}	
+
+
+@mixin normal-font {
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight: 400;
+
+    color: $normal-colour;
+}
+
+

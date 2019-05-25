@@ -1,0 +1,184 @@
+@import 'src/assets/variables.scss';
+
+.transition {
+	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
+}
+
+.contacts {
+ background: linear-gradient(60deg,#D62469,#2AB8C6);
+	
+	flex-flow: column;
+	display: flex;
+
+	justify-content: space-between;
+	align-items: flex-start;
+
+	margin-bottom: 20px !important;
+
+	height: 70vh;
+
+	@include mq('tablet-wide') {
+		height: 80vh;
+	}
+
+	@include mq('desktop') {
+		height: 85vh;
+	}
+}
+
+.text {
+	margin-top: 50px;
+
+	@include mq('desktop') {
+		margin-top: 100px;	
+	}
+
+	@include mq('desktop-super-wide') {
+		margin-top: 200px;
+	}
+}
+
+
+
+h1 {
+	@include accent-bold;
+	text-align: left;
+
+	font-size: 25px;
+	
+	color: white !important;
+
+	margin: 0px 0px;
+
+	@include mq('tablet-wide') {
+		font-size: 35px;
+	}
+	
+	@include mq('desktop') {
+		font-size: 40px;
+	}
+
+	@include mq('desktop-wide') {
+		font-size: 45px;
+	}
+
+	@include mq('desktop-super-wide') {
+		font-size: 55px;
+	}
+}
+
+h2 {
+	font: 100% $accent-font;
+	text-align: left;	
+	font-weight: 400;
+	font-size: 25px;
+
+	color: white !important;
+	
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-top: 10px;
+
+	
+	@include mq('tablet-wide') {
+		font-size: 35px;
+	}
+	
+	@include mq('desktop') {
+		font-size: 40px;
+	}
+
+	@include mq('desktop-wide') {
+		font-size: 45px;
+	}
+
+	@include mq('desktop-super-wide') {
+		font-size: 55px;
+	}
+	
+	a {
+		color: white;
+
+		&:hover {
+			transform: scale(1.15);
+			font-weight: 700;
+		}
+	}
+}
+
+.links {
+	font: 100% $normal-font;
+	font-size: 14px;
+
+	text-decoration: none;
+	text-align: left;
+	color: white;
+
+	@include mq('tablet') {
+		font-size: 16px;
+	}
+
+	@include mq('desktop') {
+		font-size: 20px;
+	}
+
+	@include mq('desktop-wide') {
+		font-size: 25px;
+	}
+
+	@include mq('desktop-super-wide') {
+		font-size: 30px;
+	}
+
+	&:hover{
+		transform: scale(1.15);
+		font-weight: 700;
+	}
+}
+
+.social {
+	justify-content: space-between;
+	flex-flow: column;
+	display: flex;
+
+	width: 100%;
+	height: 50%;
+
+	@include mq('tablet-small') {
+		height: 55%;
+	}
+
+	@include mq('tablet-wide'){
+		align-items: baseline;
+		flex-flow: row;
+
+		margin-bottom: 40px;
+
+		height: 0;
+	}
+}
+
+.social_left{
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-flow: row;
+	display: flex;
+
+	margin-bottom: 0px;
+
+	width: 100%;
+
+	@include mq('tablet-small') {
+		width: 55%;
+	}
+
+	@include mq('tablet-wide'){
+		align-items: flex-end;
+	}
+
+	@include mq('desktop') {
+		width: 40%;
+	}
+
+}
