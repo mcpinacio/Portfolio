@@ -1,5 +1,9 @@
 @import 'src/assets/variables.scss';
 
+.transition {
+	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
+}
+
 a {
 text-decoration: none;
 }
@@ -68,6 +72,11 @@ text-decoration: none;
 	@include mq('desktop') {
 		transform: scale(1.2);
 		animation: float 15s ease-in-out infinite;
+		
+		&:hover .rectangle svg {
+		stroke-dashoffset: 0;
+	}
+		
 	}
 
 	@include mq('desktop-wide') {
@@ -77,44 +86,28 @@ text-decoration: none;
 	@include mq('desktop-super-wide') {
 		transform: scale(1.5);
 	}
-}
 
-.tobe {
-
-}
-
-.recollections {
-
-}
-
-.illutrations {
 	
-}
-
-@keyframes dash {
-	from {
-    	stroke-dashoffset: 993;  
-	}
-
-	to {
-		stroke-dashoffset: 0;
-	}
 }
 
 .rectangle{
 	position: relative;
 
-	animation: dash 3s linear;
-	stroke-dasharray: 993;
-	stroke-dashoffset: 993;
-
 	margin: 0;
 
 	svg {
+		transition: 1s stroke-dashoffset cubic-bezier(0.68, 0.16, 0.25, 1); 
+
+		stroke-dasharray: 993;
+		stroke-dashoffset: 0;
+	
 		width: 195px;
 		height: 195px;
-	}
 
+		@include mq('desktop'){
+			stroke-dashoffset: 993;
+		}
+	}
 }
 
 .circle{

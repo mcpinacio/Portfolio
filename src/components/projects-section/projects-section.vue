@@ -2,7 +2,7 @@
 	<section class="projects-section">
 
 	
-	<article  class="project_container">
+	<article  class="project_container tobe">
 		<router-link to="/projects/tobe"> 
 			<figure class="rectangle animate">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 251.825 251.825">
@@ -33,7 +33,7 @@
 	</article>
 	
 
-	<article  class="project_container">
+	<article  class="project_container recollections">
 
 		<figure class="rectangle animate">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 251.825 251.825">
@@ -63,7 +63,7 @@
 
 	</article>
 
-	<article  class="project_container">
+	<article  class="project_container illustration">
 
 		<figure class="rectangle animate">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 251.825 251.825">
