@@ -1,14 +1,10 @@
 <template>
   <div class="home">
-	<section id="welcome">
-	</section>  
+    <About/> 
     <Projects/>
-    <About/>
     <Contacts/>
   </div>
 </template>
-
-
 
 <script>
 import Projects from '@/components/projects-section/projects-section.vue'

@@ -9,16 +9,12 @@
 
 	justify-content: space-around;
 	align-items: center;
+	
+	margin-top: 70px;
 
-	height: 70vh;
-
-	@include mq('tablet-wide') {
-		height: 80vh;
-	}
-
-	@include mq('desktop') {
-		height: 85vh;
-	}
+	@include mq('tablet-wide'){
+    margin-top: 55px;
+  }
 }
 
 .transition {

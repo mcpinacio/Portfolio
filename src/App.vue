@@ -49,31 +49,26 @@ html, body{
   padding-right: 0;
 
   @include mq('tablet-wide'){
-    padding: 0 40px;
-  }
-
-  @include mq('desktop'){
-    padding:0 80px;
+    padding: 0 70px;
   }
 }
 
 section {
-  margin-bottom: 20px;
 
+  height: 95vh;
+  
   padding: 40px 40px;
+  margin: 0;
 
   @include mq('tablet-small'){
     padding: 80px 80px;
   }
 
-  @include mq('tablet'){
-    margin-bottom: 40px;
-  }
-
   @include mq('tablet-wide'){
     padding: 80px 120px;
-    margin-bottom: 80px;
+    margin-top: 55px;
   }
+
   @include mq('desktop'){
     padding: 100px 150px;
   }
@@ -81,15 +76,13 @@ section {
   @include mq('desktop-super-wide'){
     padding: 100px 190px;
   }
-
-  &:first-child{
-    margin-top: 80px;
-  }
 }
 
 
 footer {
-  margin-bottom: 20px;
+  margin: 35px 0;
+
+  @include mq('desktop')
 
   p {
     @include normal-font;

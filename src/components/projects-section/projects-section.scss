@@ -5,6 +5,10 @@
 	background-color: $background-colour-blue;
 
 	width: 100%;
+	height: 150vh;
+
+	margin-bottom: 0;
+
 	
 	justify-content: space-between;
 	align-items: center;
@@ -13,12 +17,6 @@
 
 	@include mq('tablet-wide') {
 		flex-flow: row;
-
-		height: 80vh;
-	}
-
-	@include mq('desktop') {
-		height: 85vh;
 	}
 }
 

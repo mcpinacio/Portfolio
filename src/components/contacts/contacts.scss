@@ -12,18 +12,6 @@
 
 	justify-content: space-between;
 	align-items: flex-start;
-
-	margin-bottom: 20px !important;
-
-	height: 70vh;
-
-	@include mq('tablet-wide') {
-		height: 80vh;
-	}
-
-	@include mq('desktop') {
-		height: 85vh;
-	}
 }
 
 .text {
@@ -133,7 +121,6 @@ h2 {
 
 	&:hover{
 		transform: scale(1.15);
-		font-weight: 700;
 	}
 }
 
