@@ -1,9 +1,9 @@
 <template>
 	<section class="projects-section">
 
-	<router-link to="/projects/tobe"> 
-		<article  class="project_container">
-
+	
+	<article  class="project_container">
+		<router-link to="/projects/tobe"> 
 			<figure class="rectangle animate">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 251.825 251.825">
 					<g transform="translate(0 0)" fill="none" stroke="#10223c" stroke-width="4">
@@ -29,9 +29,9 @@
 				<h4>The Other<br>Body Experience</h4>
 				<h5>Interactive Art Installation</h5>
 			</div>
-
-		</article>
-	</router-link>
+		</router-link>
+	</article>
+	
 
 	<article  class="project_container">
 

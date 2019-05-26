@@ -53,28 +53,41 @@ html, body{
   }
 }
 
-section {
-
-  height: 95vh;
-  
+section { 
   padding: 40px 40px;
   margin: 0;
 
+  & :first-child(){
+  margin-top: 70px;
+  }
+
+  height: 35rem;
+
   @include mq('tablet-small'){
     padding: 80px 80px;
+    height: 36rem;
+  }
+
+  @include mq('tablet'){
+    height: 37rem;
   }
 
   @include mq('tablet-wide'){
     padding: 80px 120px;
-    margin-top: 55px;
+    margin-top: 70px;
+    height: 44rem;
   }
 
   @include mq('desktop'){
     padding: 100px 150px;
+    margin-top: 55px;
+    height: 51rem;
   }
+
 
   @include mq('desktop-super-wide'){
     padding: 100px 190px;
+    height: 64rem;
   }
 }
 
