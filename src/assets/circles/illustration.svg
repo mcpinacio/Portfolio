@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="180" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.195" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#efb6a4"/>
+      <stop offset="1" stop-color="#c38297"/>
+    </linearGradient>
+  </defs>
+  <g id="illustration" transform="translate(-1434.064 -1645.064)">
+    <circle id="illustration-2" data-name="illustration" cx="90" cy="90" r="90" transform="translate(1434.064 1645.064)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

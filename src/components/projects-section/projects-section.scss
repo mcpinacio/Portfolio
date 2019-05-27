@@ -16,8 +16,6 @@ text-decoration: none;
 	height: 50rem;
 
 	margin-bottom: 0;
-	padding-top: 0;
-
 	
 	justify-content: space-between;
 	align-items: center;
@@ -30,30 +28,16 @@ text-decoration: none;
 
 	@include mq('tablet-wide') {
 		justify-content: space-around;
-		flex-flow: row;
+		flex-flow: row wrap;
 		height: 44rem;
 	}
-
-	@include mq('desktop'){
-    	height: 51rem;
-  	}
 
  	@include mq('desktop-super-wide'){
     	height: 64rem;
   	}
 }
 
-@keyframes float {
-	0% {
-		transform: translatey(10vh);
-	}
-	50% {
-		transform: translatey(-2vh);
-	}
-	100% {
-		transform: translatey(10vh);
-	}
-}
+
 
 .project_container {
 	margin: 0;
@@ -66,28 +50,55 @@ text-decoration: none;
 	align-items: center;
 
 	@include mq('tablet') {
-		transform: scale(1.1);
+		transform: scale(1.1); 
 	}
 
 	@include mq('desktop') {
-		transform: scale(1.2);
-		animation: float 15s ease-in-out infinite;
-		
-		&:hover .rectangle svg {
-		stroke-dashoffset: 0;
-	}
-		
+		transform: scale(1.3);
+
+		&:hover {
+			.rectangle svg {
+				stroke-dashoffset: 0;
+				transform: scale(1.1);
+			}	
+
+			.title {
+				transform: scale(1.1) translateX(15px);
+			}
+			.circle {
+				transform: scale(1.1);
+			}	
+		}
 	}
 
 	@include mq('desktop-wide') {
-		transform: scale(1.3);
+		transform: scale(1.4);
 	}
 
 	@include mq('desktop-super-wide') {
 		transform: scale(1.5);
 	}
+}
 
-	
+.tobe {
+	@include mq('tablet-wide'){
+		margin-right: 50px;
+	}
+	@include mq('desktop') {
+		animation: float1 14s ease-in-out infinite;
+	}
+}
+
+.recollections {
+	@include mq('desktop') {
+		animation: float2 12s ease-in-out infinite;
+	}
+}
+
+.illustration {
+	@include mq('desktop') {
+		animation: float3 13s ease-in-out infinite;
+	}
 }
 
 .rectangle{
@@ -110,7 +121,9 @@ text-decoration: none;
 	}
 }
 
-.circle{
+.circle {
+	transition: 1s transform cubic-bezier(0.68, 0.16, 0.25, 1); 
+
 	position: absolute;
 
 	bottom: 12px;
@@ -123,17 +136,21 @@ text-decoration: none;
 	width: 180px;
 }
 
-.title{
+.title {
+	transition: 1s transform cubic-bezier(0.68, 0.16, 0.25, 1); 
+	
 	text-decoration: none;
 
 	position: relative;
 
 	text-align: left;
 	bottom: 90px;
-	left: 35px;
+	left: 20px;
 	z-index: 2;
 
 	margin: 0;
+
+	
 }
 
 h4 {
@@ -146,14 +163,42 @@ h4 {
 
 h5 {
 	@include normal-font;
-	
 	margin: 0;
 }
 
-.container{
-	position: absolute;
-	display: flex;
-	flex-flow: columns;
-	justify-content: space-between;
-	align-items: center;
+
+@keyframes float1 {
+	0% {
+		transform: translatey(10vh);
+	}
+	50% {
+		transform: translatey(-6vh);
+	}
+	100% {
+		transform: translatey(10vh);
+	}
+}
+
+@keyframes float2 {
+	0% {
+		transform: translatey(13vh);
+	}
+	50% {
+		transform: translatey(-3vh);
+	}
+	100% {
+		transform: translatey(13vh);
+	}
+}
+
+@keyframes float3 {
+	0% {
+		transform: translatey(16vh);
+	}
+	50% {
+		transform: translatey(-8vh);
+	}
+	100% {
+		transform: translatey(16vh);
+	}
 }

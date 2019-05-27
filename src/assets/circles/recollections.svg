@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="180" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.25" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#eac596"/>
+      <stop offset="1" stop-color="#e89479"/>
+    </linearGradient>
+  </defs>
+  <g id="recollections" transform="translate(-1061.255 -1356.778)">
+    <circle id="recollections-2" data-name="recollections" cx="90" cy="90" r="90" transform="translate(1061.255 1356.778)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
