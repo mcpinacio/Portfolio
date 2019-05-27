@@ -65,13 +65,13 @@
      				data-aos-delay="25"
      				data-aos-duration="750"
      				data-aos-easing="ease-in-out">
-				<img src="./recollections/poster_character.png" alt="poster with character" class="img-vertical transition">
-				<figcaption>Game poster inspired by the seasons and the characters</figcaption>
+				<img src="@/assets/recollections/poster_character.png" alt="poster with character" class="img-vertical transition">
+				<figcaption>Game poster with game elements</figcaption>
 			</figure>
 			<figure data-aos="fade-in"
      				data-aos-delay="25"
      				data-aos-duration="750">
-				<img src="./recollections/poster_sun.png" alt="poster with sun and trees" class="img-vertical transition">
+				<img src="@/assets/recollections/poster_sun.png" alt="poster with sun and trees" class="img-vertical transition">
 				<figcaption>Game poster inspired by the winter background</figcaption>
 			</figure>
 				
@@ -80,37 +80,42 @@
 			<figure data-aos="fade-in"
      				data-aos-delay="25"
      				data-aos-duration="750">
-				<img src="./recollections/four_seasons.png" alt="four seasons" class="img-horizontal">
+				<img src="@/assets/recollections/four_seasons.png" alt="four seasons" class="img-horizontal">
 				<figcaption>The fours seasons backgrounds combined</figcaption>
 			</figure>
 			<figure data-aos="fade-in"
      				data-aos-delay="25"
      				data-aos-duration="750"
      				data-aos-easing="ease-in-out">
-				<img src="./recollections/summer.png" alt="summer background" class="img-horizontal transition">
+				<img src="@/assets/recollections/summer.png" alt="summer background" class="img-horizontal transition">
 				<figcaption>Summer background, it is the level 2 and associated with adolescence</figcaption>
 			</figure>
 			<figure data-aos="fade-in"
      				data-aos-delay="25"
      				data-aos-duration="750"
      				data-aos-easing="ease-in-out">
-				<img src="./recollections/winter.png" alt="winter background" class="img-horizontal transition">
+				<img src="@/assets/recollections/winter.png" alt="winter background" class="img-horizontal transition">
 				<figcaption>Winter bacground, it is the last level and associated with the  elderly</figcaption>
 			</figure>
 			<figure data-aos="fade-in"
      				data-aos-delay="25"
      				data-aos-duration="750"
      				data-aos-easing="ease-in-out">
-				<img src="./recollections/characters.png" alt="characters" class="img-horizontal transition">
+				<img src="@/assets/recollections/characters.png" alt="characters" class="img-horizontal transition">
 				<figcaption>Male and female characteres life cycle</figcaption>
 			</figure>
 			<figure data-aos="fade-in"
      				data-aos-delay="25"
      				data-aos-duration="750"
      				data-aos-easing="ease-in-out">
-				<img src="./recollections/seasons_menu.png" alt="seasons menu" class="img-horizontal transition">
+				<img src="@/assets/recollections/seasons_menu.png" alt="seasons menu" class="img-horizontal transition">
 				<figcaption>Menu level UI</figcaption>
 			</figure>
+		</div>
+		<div class="projnav">
+			<router-link to="/projects/tobe">
+			<p class="prev">previous</p></router-link>
+			<router-link to="/projects/illustration"><p>next</p></router-link>
 		</div>
 	</div>
 </template>

@@ -340,3 +340,25 @@ figure {
 		margin-bottom: 240px;
 	}
 }
+
+.projnav {
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: row;
+	display: flex;
+
+	a {
+		text-decoration: none;
+		width: 48%; 
+		opacity: 0.5;
+	}
+
+	@include mq('desktop') {
+		display: none;
+	}
+}
+
+.prev {
+	text-align: right
+}
+
