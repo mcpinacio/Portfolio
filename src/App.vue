@@ -81,7 +81,6 @@ section {
   @include mq('desktop'){
     padding: 100px 150px;
     margin-top: 55px;
-    height: 51rem;
   }
 
 
