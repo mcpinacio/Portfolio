@@ -184,12 +184,18 @@ p {
 	text-align: left;
 	
 	@include mq('tablet-wide'){
-		justify-content: space-between;
+		justify-content: flex-start;
 		flex-flow: column wrap;	
 		width: 17%;
 		order: 0;
 	}
 
+}
+
+.year, .deliverables {
+	@include mq('tablet-wide'){
+		margin-bottom: 50px;
+	}
 }
 
 .year2 {
