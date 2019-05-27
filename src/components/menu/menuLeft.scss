@@ -1,5 +1,13 @@
 @import 'src/assets/variables.scss';
 
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .containerLeft{
 	position: fixed;
 
@@ -87,7 +95,7 @@ span {
 	opacity: 0;
 
 	justify-content: space-around;
-	align-items: flex-start;
+	align-items: center;
 	display: flex;
 
 	overflow-x:hidden;
@@ -118,40 +126,41 @@ nav {
 	flex-direction: column;
 	display: flex;
 
-	height: 58%;
+	height: 65%;
 	width: 50%;
 
-	margin: 150px 41px;
+	margin-left: 45px;
+	margin-right: 45px;
     padding: 0;
 }
 
 nav a {
 	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
 
-	display: inline-block;
-
-	position: relative;
-	margin: 15px 25px;
-
 	text-shadow: 0 0 1px rgba(255,255,255,0.3);
 	text-transform: uppercase;
 	text-decoration: none;
 
+	display: inline-block;
+
+	position: relative;
+	margin: 15px 20px;
+
 	@include accent-bold;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	text-align: left;
 	font-size: 35px;
 
 	color: $normal-colour !important;
 	outline: none;
+
+		&:hover, &:focus {
+		outline: none;
+		transform: scale(1.05);
+	}
 	
 }
 
-nav a:hover,
-nav a:focus {
-	transform: scale(1.05);
-	outline: none;
-}
 
 .cl-effect-3 a {
 	padding: 8px 0;
