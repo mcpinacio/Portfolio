@@ -61,12 +61,13 @@ span {
 	}
 }
 
-.menu-toggle.open {
+.menu-open {
+	transform: scale(1.2);
 	span{
 
 		&:first-child{
 			transform: rotate(45deg);
-			top: 6px;
+			top: 0px;
 		}
 
 		&:last-child{
@@ -97,58 +98,86 @@ span {
 	top: 0;
 
 	height: 100vh;
-	
-	&.open {
-		opacity: 1;
-		left: 0;
-		width: 100%;
+}
 
-		@include mq('desktop') {
-		width: 45%;
-		}
+.menubigopen {
+	opacity: 1;
+	left: 0;
+	width: 100%;
+
+	@include mq('desktop') {
+	width: 45%;
 	}
 }
 
-ul {
-	transition: 0.3s cubic-bezier(0.68, 0.16, 0.25, 1);
+
+nav {
+	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
 
 	justify-content: space-between;
 	flex-direction: column;
 	display: flex;
 
-    height: 58%;
+	height: 58%;
 	width: 50%;
 
 	margin: 150px 41px;
     padding: 0;
-
-
-	@include normal-font;
-	font-size: 40px;
-    text-align: left;
-
-	list-style: none;
 }
 
-li {
-	transition: 0.3s cubic-bezier(0.68, 0.16, 0.25, 1);
+nav a {
+	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
 
-		&:hover, &:focus{
-		transform: scale(1.2) translateX(25px);
-		}
+	display: inline-block;
 
-			a {
-			text-decoration: none;
-			text-transform: uppercase;
+	position: relative;
+	margin: 15px 25px;
 
-			color: $normal-colour;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	text-transform: uppercase;
+	text-decoration: none;
 
-				&:hover, &:focus{
-					font-weight: 700;
-				}
-			}
+	@include accent-bold;
+	letter-spacing: 1px;
+	text-align: left;
+	font-size: 35px;
+
+	color: $normal-colour !important;
+	outline: none;
+	
 }
 
+nav a:hover,
+nav a:focus {
+	transform: scale(1.05);
+	outline: none;
+}
 
+.cl-effect-3 a {
+	padding: 8px 0;
+}
 
+.cl-effect-3 a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: rgba(16, 34, 60, 0.1);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
 
+.cl-effect-3 a:hover::after,
+.cl-effect-3 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
