@@ -4,6 +4,8 @@ import Home from './views/Home.vue'
 import Recollections from './views/recollections.vue'
 import TOBE from './views/tobe.vue'
 import Illustration from './views/illustration.vue'
+import AboutMe from './views/about/about.vue'
+
 
 Vue.use(Router)
 
@@ -31,7 +33,11 @@ export default new Router({
       name: 'illustration',
       component: Illustration
     },
-
+    {
+      path: '/about',
+      name: 'about',
+      component: AboutMe
+    }
   ],
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {

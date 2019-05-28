@@ -9,7 +9,7 @@
 		<h1>My name is Mariana Inácio, I'm a UX/UI Designer and I want become an unicorn!</h1>
 
 		<div class="container">
-			<router-link to="/">
+			<router-link to="/about">
 				<figure class="rectangle">
 					<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 266 98">
 						<g id="Grupo_26" data-name="Grupo 26" transform="translate(-294.919 -1483.78)">
