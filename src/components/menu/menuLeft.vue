@@ -1,6 +1,6 @@
 <template>
-	<div class="containerLeft" id="example-2">
-		<div class="menu-toggle" v-on:click="toggleMenu" v-bind:class="{'menu-open': open}">
+	<div class="containerLeft">
+		<div class="menu-toggle" v-on:click="toggleMenu" v-bind:class="{'open': open}">
 			<span class="hamburger"></span>
 			<span class="hamburger"></span>
 		</div>

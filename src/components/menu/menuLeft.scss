@@ -25,13 +25,11 @@
 		height: 100vh;
 		width: 70px;
 
-   		z-index: 12;
+   		z-index: 2;
 	}
 }
 
 .menu-toggle {
-	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
-
     justify-content: space-between;
     flex-flow: column;
 	display: flex;
@@ -49,8 +47,8 @@
 }
 
 span {
-	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
-
+	transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+	
 	background: $normal-colour;
 
 	position: absolute;
@@ -69,18 +67,20 @@ span {
 	}
 }
 
-.menu-open {
-	transform: scale(1.2);
+.open {
+	height: 25px;
+	width: 25px;
+
 	span{
 
 		&:first-child{
 			transform: rotate(45deg);
-			top: 0px;
+			top: 7px;
 		}
 
 		&:last-child{
 			transform: rotate(-45deg);
-			bottom: 10px;
+			bottom: 15px;
 		}
 	}
 }
@@ -90,7 +90,7 @@ span {
 .menubig {
 	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
 
-	box-shadow: 1px 1px 14px 0px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 14px 0px rgba(0,0,0,0.05);
 	background-color: white;
 	opacity: 0;
 
@@ -105,6 +105,8 @@ span {
 	bottom: 0;
 	top: 0;
 
+	padding: 55px 80px;
+
 	height: 100vh;
 }
 
@@ -113,8 +115,8 @@ span {
 	left: 0;
 	width: 100%;
 
-	@include mq('desktop') {
-	width: 45%;
+	@include mq('tablet-wide') {
+	width: 40%;
 	}
 }
 
@@ -126,12 +128,9 @@ nav {
 	flex-direction: column;
 	display: flex;
 
-	height: 65%;
-	width: 50%;
+	height: 70%;
 
-	margin-left: 45px;
-	margin-right: 45px;
-    padding: 0;
+	margin-left: 20px;
 }
 
 nav a {
@@ -144,12 +143,10 @@ nav a {
 	display: inline-block;
 
 	position: relative;
-	margin: 15px 20px;
 
 	@include accent-bold;
-	letter-spacing: 2px;
 	text-align: left;
-	font-size: 35px;
+	font-size: 30px;
 
 	color: $normal-colour !important;
 	outline: none;
@@ -163,7 +160,7 @@ nav a {
 
 
 .cl-effect-3 a {
-	padding: 8px 0;
+	padding: 4px 0;
 }
 
 .cl-effect-3 a::after {

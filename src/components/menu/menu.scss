@@ -8,7 +8,6 @@
 }
 
 .menu-toggle {
-	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
 
     justify-content: space-between;
     flex-flow: column;
@@ -23,11 +22,11 @@
 	height: 15px;
 	width: 30px;
 
-	z-index: 10;
+	z-index: 1;
 }
 
 span {
-	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
+	transition: 0.25s cubic-bezier(0.4, 0, 1, 1);
 
 	background: $normal-colour;
 
@@ -47,19 +46,19 @@ span {
 	}
 }
 
-.menu-toggle.open {
-	transform: translateX();
+.open {
+	z-index: 3;
 
 	span{
 
 		&:first-child{
 			transform: rotate(45deg);
-			top: 10px;
+			top: 1px;
 		}
 
 		&:last-child{
 			transform: rotate(-45deg);
-			bottom: 6px;
+			bottom: 10px;
 		}
 	}
 }
@@ -74,70 +73,70 @@ span {
 	opacity: 0;
 
 	justify-content: space-around;
-	align-items: flex-start;
+	align-items: center;
 	display: flex;
 
-	overflow-x:hidden;
+	overflow: hidden;
 
 	position: fixed;
-	left: -100vh;
-	z-index: 3;
+	left: 0;
+	z-index: 0;
 	bottom: 0;
-	top: 0;
+	top: -100vh;
+
+	padding: 120px 80px;
 
 	height: 100vh;
-	
-	&.open {
-		opacity: 1;
-		left: 0;
-		width: 100%;
+	width: 100%;
 
-		@include mq('tablet') {
-		width: 50%;
-		}
-	}
+
 }
 
-ul {
-	transition: 0.3s cubic-bezier(0.68, 0.16, 0.25, 1);
+.menubigopen{
+	opacity: 1;
+	top: 0;
+	width: 100%;
+
+}
+
+nav {
+	transition: 0.25s cubic-bezier(0.4, 0, 1, 1);
 
 	justify-content: space-between;
 	flex-direction: column;
+	align-items: center;
 	display: flex;
 
-    height: 50%;
-	width: 65%;
+	height: 100%;
 
-	margin: 150px 41px;
-    padding: 0;
+}
 
+nav a {
+	transition: 0.25s ease-in-out;
+	transition-delay: 0.3s;
 
-	@include normal-font;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	text-transform: uppercase;
+	text-decoration: none;
+
+	display: inline-block;
+
+	position: relative;
+	
+	top: -10px;
+	opacity: 0;
+
+	@include accent-bold;
+	text-align: left;
 	font-size: 30px;
-    text-align: left;
 
-	list-style: none;
+	letter-spacing: 1px;
+
+	color: $normal-colour !important;
+	outline: none;
 }
 
-li {
-	transition: 0.3s cubic-bezier(0.68, 0.16, 0.25, 1);
-
-		&:hover, &:focus{
-		transform: scale(1.2) translateX(25px);
-		}
-
-			a {
-			text-decoration: none;
-			text-transform: uppercase;
-
-			color: $normal-colour;
-
-				&:hover, &:focus{
-					font-weight: 700;
-				}
-			}
+.move {
+	transform: translateY(10px);
+	opacity: 1;
 }
-
-
-
-
