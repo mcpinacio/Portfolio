@@ -8,8 +8,8 @@
 		<div class="menubig" v-on:click="toggleMenu" v-bind:class="{'menubigopen': open}">
 			<nav class="cl-effect-3">
 				<a href="#">Home</a>
-				<a href="#">Projects</a>
 				<a href="#">About Me</a>
+				<a href="#">Projects</a>
 				<a href="#">Contacts</a>
 			</nav>
 		</div>
