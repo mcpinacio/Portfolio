@@ -12,20 +12,19 @@
 		
 		<div class="menubig"
 			 v-bind:class="{'open': open}">
-			<nav class="cl-effect-3">
-				<a href="#"
-				   v-on:click.prevent="goToSection('home')">Home</a>
+			<nav>
+				<button
+				   v-on:click.prevent="goToSection('home')">Home</button>
+				<button
+				   v-on:click.prevent="goToSection('aboutMe')">About Me</button>
 
-				<a href="#"
-				   v-on:click.prevent="goToSection('aboutMe')">About Me</a>
+				<button
+					v-on:click.prevent="goToSection('projects')">Projects</button>
 
-				<a href="#"
-					v-on:click.prevent="goToSection('projects')">Projects</a>
-
-				<a href="#"
+				<button href="#"
 				   v-on:click.prevent="goToSection('contacts')">
 					Contacts
-				</a>
+				</button>
 			</nav>
 		</div>
 
