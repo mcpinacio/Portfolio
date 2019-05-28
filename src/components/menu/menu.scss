@@ -124,7 +124,9 @@ nav a {
 
 	position: relative;
 	
-	top: -10px;
+	cursor: pointer;
+
+	transform: translateY(-10px);
 	opacity: 0;
 
 	@include accent-bold;
@@ -138,6 +140,6 @@ nav a {
 }
 
 .move {
-	transform: translateY(10px);
+	transform: translateY(0px);
 	opacity: 1;
 }
