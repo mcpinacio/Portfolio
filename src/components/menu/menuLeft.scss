@@ -1,11 +1,21 @@
 @import 'src/assets/variables.scss';
 
-*,
-*:after,
-*::before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+.background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	visibility: hidden;
+
+	transition: 0.25s background-color cubic-bezier(0.68, 0.16, 0.25, 1);
+
+	&.open {
+		visibility: visible;
+		
+		background-color: rgba(black, 0.5);
+	}
 }
 
 .containerLeft{
@@ -44,6 +54,23 @@
 	width: 20px;
 
 	z-index: 10;
+
+	&.open {
+		transform: scale(1.1);
+
+		span{
+
+			&:first-child{
+				transform: rotate(45deg);
+				top: 0px;
+			}
+
+			&:last-child{
+				transform: rotate(-45deg);
+				bottom: 10px;
+			}
+		}
+	}
 }
 
 span {
@@ -68,24 +95,6 @@ span {
 	}
 }
 
-.open {
-
-	transform: scale(1.1);
-
-	span{
-
-		&:first-child{
-			transform: rotate(45deg);
-			top: 0px;
-		}
-
-		&:last-child{
-			transform: rotate(-45deg);
-			bottom: 10px;
-		}
-	}
-}
-
 
 
 .menubig {
@@ -105,18 +114,19 @@ span {
 	left: 0;
 	bottom: 0;
 	top: 0;
+	z-index: 1;
 
 	padding: 55px 80px;
 
 	height: 100vh;
 	width: 40%;
 	
-	transform: translateX(-100%)
-}
+	transform: translateX(-100%);
 
-.menubigopen {
-	opacity: 1;
-	transform: translateX(0%);
+	&.open {
+		opacity: 1;
+		transform: translateX(0%);
+	}
 }
 
 
@@ -153,7 +163,6 @@ nav a {
 
 		&:hover, &:focus {
 		outline: none;
-		transform: scale(1.05);
 	}
 	
 }

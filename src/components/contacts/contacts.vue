@@ -1,5 +1,5 @@
 <template>
-<section class="contacts">
+	<section id="contacts" class="contacts">
 	 	<div class="text transition">
 	 	<h1 class="transition">Let's work together<br>Drop me an email</h1>
 	 </div>

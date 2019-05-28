@@ -1,5 +1,5 @@
 <template>
-<section class="about">
+<section id="aboutMe" class="about">
 
 	<figure class="pic">
 		<img src="@/assets/profile_pic.png" alt="Mariana Inácio Profile Pictue">
