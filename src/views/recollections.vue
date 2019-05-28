@@ -112,19 +112,22 @@
 				<figcaption>Menu level UI</figcaption>
 			</figure>
 		</div>
+
 		<div class="projnav">
-			<router-link to="/projects/tobe">
-			<p class="prev">previous</p></router-link>
-			<router-link to="/projects/illustration"><p>next</p></router-link>
+			<div>
+				<router-link to="/projects/tobe">previous</router-link>
+			</div>
+
+			<div>
+				<router-link to="/projects/illustration">next</router-link>
+			</div>
 		</div>
+
 	</div>
 </template>
 
 <style scoped lang="scss" src="./projects.scss"/>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"src="https://unpkg.com/aos@2.3.1/dist/aos.js">
-	AOS.init();
-</script>
 
 <script>
 	export default {

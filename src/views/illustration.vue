@@ -45,19 +45,21 @@
 				<figcaption>Mariana Cabral</figcaption>
 			</figure>
 		</div>
+
 		<div class="projnav">
-			<router-link to="/projects/recollections">
-			<p class="prev">previous</p></router-link>
-			<router-link to="/projects/tobe"><p>next</p></router-link>
+			<div>
+				<router-link to="/projects/recollections">previous</router-link>
+			</div>
+
+			<div>
+				<router-link to="/projects/tobe">next</router-link>
+			</div>
 		</div>
+		
 	</div>
 </template>
 
 <style scoped lang="scss" src="./illustration.scss"/>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"src="https://unpkg.com/aos@2.3.1/dist/aos.js">
-	AOS.init();
-</script>
 
 <script>
 	export default {

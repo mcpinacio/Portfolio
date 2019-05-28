@@ -348,23 +348,57 @@ figure {
 }
 
 .projnav {
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	flex-flow: row;
 	display: flex;
 
+	div {
+		width: 40%;
+
+
+		&:first-child {
+			text-align: right;
+		}
+
+		&:last-child {
+			text-align: left;
+		}
+	}
+
 	a {
 		text-decoration: none;
-		width: 48%; 
-		opacity: 0.5;
-	}
+		color: $accent-colour;
 
-	@include mq('desktop') {
-		display: none;
+		position: relative;
+		
+		padding: 4px 0;
+		
+
+		&::after {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			border-radius: 25px;
+			background: $accent-colour;
+			content: '';
+			opacity: 0;
+			-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+			-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+			transition: opacity 0.3s, transform 0.3s;
+			-webkit-transform: translateY(10px);
+			-moz-transform: translateY(10px);
+			transform: translateY(10px);
+		}
+
+		&:hover::after,
+		&:focus::after {
+			opacity: 1;
+			-webkit-transform: translateY(0px);
+			-moz-transform: translateY(0px);
+			transform: translateY(0px);
+		}
 	}
 }
-
-.prev {
-	text-align: right
-}
-

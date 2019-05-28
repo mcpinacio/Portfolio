@@ -66,9 +66,13 @@
 		</div>
 
 		<div class="projnav">
-			<router-link to="/projects/illustration">
-			<p class="prev">previous</p></router-link>
-			<router-link to="/projects/recollections"><p>next</p></router-link>
+			<div>
+				<router-link to="/projects/illustration">previous</router-link>
+			</div>
+
+			<div>
+				<router-link to="/projects/recollections">next</router-link>
+			</div>
 		</div>
 
 	</div>

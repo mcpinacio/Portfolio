@@ -28,8 +28,12 @@ export default {
 @import 'src/assets/variables.scss';
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Quattrocento+Sans:400,700');
 
-*,*:before, *:after{
-  box-sizing: border-box;
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html, body{
