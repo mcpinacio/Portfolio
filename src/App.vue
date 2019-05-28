@@ -13,6 +13,7 @@
 import NavBar from '@/components/nav-bar/nav-bar.vue'
 import Menu from "@/components/menu/menu.vue"
 import MenuLeft from "@/components/menu/menuLeft.vue"
+import NavProj from "@/components/navproj/navproj.vue"
 
 
 export default {
@@ -20,7 +21,7 @@ export default {
   components: {
     NavBar,
     Menu,
-    MenuLeft
+    MenuLeft,
   }
 }
 </script>
@@ -57,9 +58,7 @@ section {
   padding: 40px 40px;
   margin: 0;
 
-  & :first-child(){
   margin-top: 70px;
-  }
 
   height: 35rem;
 
@@ -74,8 +73,7 @@ section {
 
   @include mq('tablet-wide'){
     padding: 80px 120px;
-    margin-top: 70px;
-    height: 44rem;
+    height: 41rem;
   }
 
   @include mq('desktop'){
