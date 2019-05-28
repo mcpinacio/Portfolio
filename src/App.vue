@@ -13,8 +13,6 @@
 import NavBar from '@/components/nav-bar/nav-bar.vue'
 import Menu from "@/components/menu/menu.vue"
 import MenuLeft from "@/components/menu/menuLeft.vue"
-import NavProj from "@/components/navproj/navproj.vue"
-
 
 export default {
   name: 'app',

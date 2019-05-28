@@ -1,5 +1,8 @@
 @import 'src/assets/variables.scss';
 
+.transition {
+	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
+}
 
 .about{
 	background-color: $background-colour-blue;
@@ -9,17 +12,9 @@
 
 	justify-content: space-around;
 	align-items: center;
-	
-	margin-top: 70px;
-
-	@include mq('tablet-wide'){
-    margin-top: 55px;
-  }
 }
 
-.transition {
-	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
-}
+
 
 h1 {
 	@include accent-bold;

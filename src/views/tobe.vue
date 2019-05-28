@@ -85,6 +85,7 @@
 	export default {
 	  name: 'tobe',
 	  props: {
+
 	  }
 	}
 </script>
