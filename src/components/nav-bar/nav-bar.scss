@@ -30,6 +30,10 @@ nav {
 	right: 0;
 	left: 0;
 
+	@include mq('tablet-wide'){
+		padding: 0 70px;
+	}
+
 	@include mq('desktop'){
 		padding: 0 70px;
 
