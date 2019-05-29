@@ -2,7 +2,6 @@
   <div id="app">
     <nav-bar/>
     <router-view/>
-    <MenuLeft/>
   <footer>
   <p>designed and developed by mariana inácio</p>
 </footer>
@@ -12,14 +11,13 @@
 <script>
 import NavBar from '@/components/nav-bar/nav-bar.vue'
 import Menu from "@/components/menu/menu.vue"
-import MenuLeft from "@/components/menu/menuLeft.vue"
+
 
 export default {
   name: 'app',
   components: {
     NavBar,
     Menu,
-    MenuLeft,
   }
 }
 </script>

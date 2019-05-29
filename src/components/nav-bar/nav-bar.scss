@@ -1,11 +1,5 @@
 @import 'src/assets/variables.scss';
 
-menu-view {
-	@include mq('tablet-wide'){
-		display: none;
-		width: 0;
-	}
-}
 
 .transition {
 	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
@@ -38,53 +32,5 @@ nav {
 
 		height: 55px;
 	}	
-}
-
-
-ul {
-	display: none;
-	list-style-type: none;
-	width: 0;
-
-	padding: 0;
-	margin: 0;
-
-	opacity: 0.35;
-
-	@include mq('desktop'){
-	justify-content: space-between;
-	align-items: center;
-	display: flex;
-	width: 15%;
-	}
-
-		li {
-			padding: 0;
-			margin: 0;
-
-			img {
-				padding: 0;
-				margin: 0;
-
-				height: 15px;
-				object-fit: contain;
-			}
-		}
-
-	svg, figure {
-	margin: 0;
-	padding: 0;
-
-	height: 15px;
-	}
-}
-
-
-.linkedin {
-	fill: #10223c;
-
-	&:hover{
-	fill: #0077B5;
-}
 }
 

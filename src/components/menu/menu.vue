@@ -8,7 +8,7 @@
 		</div>
 
 		<div class="menubig" 
-			 v-bind:class="{'menubigopen': open}">
+			 v-bind:class="{'open': open}">
 			<nav >
 				<button
 				   v-on:click.prevent="goToSection('home')">Home</button>
@@ -23,6 +23,11 @@
 					Contacts
 				</button>
 			</nav>
+	</div>
+
+	<div class="background"
+			 v-on:click="closeMenu"
+			 v-bind:class="{'open': open}">
 	</div>
 </div>
 

@@ -83,22 +83,36 @@ text-decoration: none;
 .tobe {
 	@include mq('desktop') {
 		animation: float1 14s ease-in-out infinite;
+
+		&:hover {
+			animation:none;
+		}
 	}
 }
 
 .recollections {
 	@include mq('desktop') {
 		animation: float2 12s ease-in-out infinite;
+
+		&:hover {
+			animation:none;
+		}
 	}
 }
 
 .illustration {
 	@include mq('desktop') {
 		animation: float3 13s ease-in-out infinite;
+
+		&:hover {
+			animation:none;
+		}
 	}
 }
 
 .rectangle {
+	transition: 1s transform cubic-bezier(0.68, 0.16, 0.25, 1); 
+	
 	position: relative;
 
 	margin: 0;
