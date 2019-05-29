@@ -54,7 +54,7 @@ text-decoration: none;
 	}
 
 	@include mq('desktop') {
-		transform: scale(1.5);
+		transform: scale(1.15);
 
 		&:hover {
 			.rectangle svg {
@@ -72,11 +72,11 @@ text-decoration: none;
 	}
 
 	@include mq('desktop-wide') {
-		transform: scale(1.4);
+		transform: scale(1.25);
 	}
 
 	@include mq('desktop-super-wide') {
-		transform: scale(1.5);
+		transform: scale(1.4);
 	}
 }
 
@@ -112,7 +112,7 @@ text-decoration: none;
 
 .rectangle {
 	transition: 1s transform cubic-bezier(0.68, 0.16, 0.25, 1); 
-	
+
 	position: relative;
 
 	margin: 0;
