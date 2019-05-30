@@ -5,6 +5,14 @@
 	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
 }
 
+menu-view {
+	display: visible;
+
+	@include mq('desktop') {
+		display: none;
+	}
+}
+
 nav {
 	background-color: white;
 
@@ -16,7 +24,7 @@ nav {
 
 	position: fixed;
 
-	height: 70px;
+	height: 60px;
 
 	z-index: 10;
 	top: 0;
@@ -34,3 +42,82 @@ nav {
 	}	
 }
 
+.navigation {
+	display: none;
+
+	list-style: none;
+
+	margin: 0px 0px;
+	padding: 0px 0px;
+
+	@include mq('desktop') {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		width: 25%;
+	}
+}
+
+button {
+	text-decoration: none;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+
+	margin: 0 0;
+	padding: 0px 0px;
+	padding-bottom: 2px;
+	
+	display: inline-block;
+
+	position: relative;
+
+	cursor: pointer;
+
+	border: none;
+	background: none;
+
+	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
+
+	@include normal-font;
+	letter-spacing: 1px;
+	font-weight: 500;
+	text-align: left;
+	font-size: 16px;
+
+	opacity: 0.8;
+
+	color: $accent-colour !important;
+	outline: none;
+
+		&:hover, &:focus {
+		outline: none;
+		opacity: 1;
+	}
+
+	&::after {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		border-radius: 25px;
+		background: rgba(223, 125, 145, 0.7);
+		content: '';
+		opacity: 0;
+		-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+		-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+		transition: opacity 0.3s, transform 0.3s;
+		-webkit-transform: translateY(10px);
+		-moz-transform: translateY(10px);
+		transform: translateY(10px);
+	}
+	
+	&:hover::after,
+	&:focus::after {
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+	
+}

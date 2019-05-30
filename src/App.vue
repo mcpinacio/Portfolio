@@ -24,7 +24,7 @@ export default {
 
 <style lang="scss">
 @import 'src/assets/variables.scss';
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Quattrocento+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,500,700&display=swap');
 
 *,
 *:after,
@@ -40,7 +40,7 @@ html, body{
 }
 
 #app {
-  font-family: 'Quattrocento Sans', 'Lato', sans-serif;
+  font-family: 'Raleway', 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -58,7 +58,7 @@ section {
   padding: 40px 40px;
   margin: 0;
 
-  margin-top: 70px;
+  margin-top: 60px;
 
   height: 35rem;
 
@@ -81,9 +81,14 @@ section {
     margin-top: 55px;
   }
 
+   @include mq('desktop-wide'){
+    padding: 100px 120px;
+    margin-top: 55px;
+  }
+
 
   @include mq('desktop-super-wide'){
-    padding: 100px 190px;
+    padding: 100px 150px;
     height: 64rem;
   }
 }
@@ -100,7 +105,7 @@ footer {
 
     text-align: center;
     
-    opacity: 0.3;
+    opacity: 0.5;
 
     transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
 

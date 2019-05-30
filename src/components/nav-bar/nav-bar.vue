@@ -1,10 +1,25 @@
 <template>
 	<nav>
-		<menu-view/>
-
+		
 		<router-link to='/'>
-			<img src="/LOGO.png" alt="mariana inacio logo">
+			<button>mariana inácio</button>
 		</router-link>
+
+		<div class="navigation">
+				<button
+				   v-on:click.prevent="goToSection('aboutMe')">about</button>
+
+				<button
+					v-on:click.prevent="goToSection('projects')">projects</button>
+
+				<button href="#"
+				   v-on:click.prevent="goToSection('contacts')">
+					contacts
+				</button>
+
+			</div >
+
+			<menu-view/>
 
 	</nav>
 
@@ -18,7 +33,48 @@
 	export default {
 		components: {
 			MenuView
-		}
-	}
+		},
+
+	data() {
+	    return {
+	    	open: false
+	    };
+  	},
+
+  	methods: {
+	  	closeMenu() {
+	  		this.open = false;
+	  	},
+
+	    toggleMenu() {
+	    	this.open = !this.open;
+	    },
+	    scrollTo(sectionId) {
+	    	const section = document.getElementById(sectionId);
+
+	    	if (section) {
+		    	section.scrollIntoView({ 
+				  behavior: 'smooth' 
+				});
+
+				this.closeMenu();
+	    	}
+	    },
+
+	    goToSection(sectionId) {
+	    	if (this.$route.name === 'home') {
+	    		this.scrollTo(sectionId);
+	    	}
+	    	else {
+	    		this.$router.push({ name: 'home' }, () => {
+			
+					setTimeout(() => {
+	    				this.scrollTo(sectionId);	
+					}, 250);
+				});
+	    	}
+	    }
+  	}
+ } 	
 
 </script>

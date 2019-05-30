@@ -23,7 +23,12 @@
 }
 
 .container {
-	width: 15%;
+	display: visible;
+
+	@include mq('desktop') {
+		display: none;
+	}
+
 }
 
 .menu-toggle {
@@ -62,6 +67,7 @@ span {
 
 	&:last-child {
 		bottom: 0;
+		right: 0;
 		width: 65%;
 	}
 }
@@ -89,7 +95,7 @@ span {
 .menubig {
 	position: fixed;
 	top: 0;
-	left: 0;
+	right: 0;
 	bottom: 0;
 	z-index: 1;
 	overflow-x: hidden;
@@ -106,7 +112,7 @@ span {
 	background-color: white;
 	box-shadow: 1px 1px 14px 0px rgba(0,0,0,0.05);
 
-	transform: translateX(-100%);
+	transform: translateX(100%);
 	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
 
 	&.open{

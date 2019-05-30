@@ -32,11 +32,11 @@ $background-colour-pink: #F7BFB8;
 $background-colour-contacts: linear-gradient(60deg, #E9135E, #2AB8C6);
 
 //fonts
-$accent-font:'Lato', sans-serif;
-$normal-font: 'Quattrocento Sans', sans-serif;
+$accent-font: 'Montserrat', sans-serif;
+$normal-font: 'Raleway', sans-serif;
 
 @mixin accent-bold {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 
 	color: #DF7D91;
@@ -44,7 +44,7 @@ $normal-font: 'Quattrocento Sans', sans-serif;
 
 
 @mixin normal-font {
-	font-family: 'Quattrocento Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 
     color: $normal-colour;

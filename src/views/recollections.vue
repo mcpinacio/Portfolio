@@ -1,9 +1,13 @@
 <template>
+<div>
 	<div class="container transition">
+
+		
 		<div class="projects transition">
 			
 			<div class="title transition">
 				<h1 class="transition">Recollections</h1>
+		
 			</div>
 
 			<div class="desc-container transition">
@@ -124,6 +128,7 @@
 		</div>
 
 	</div>
+</div>
 </template>
 
 <style scoped lang="scss" src="./projects.scss"/>
