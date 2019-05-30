@@ -1,82 +1,89 @@
 <template>
-<section id="aboutMe" class="about">
-	<div class="container">
+  <section id="aboutMe"
+           class="about"
+           ref="container">
+    <div class="container">
 
-		<div class="up">
-			<img class="profile" id="inner" src="@/assets/profile_pic.png" alt="Mariana Inácio Profile Pictue">
-			<div class="impose">
-				<div class="text">	
-					<h1>Hi, I'm Mariana!</h1>
-					<h1>I'm a UX/UI Designer, who wants to become an unicorn!</h1>
-				</div>
-			<div class="btn">
-			<router-link to="/about">
-				<button>Learn more</button>
-				<div class="up"></div>
-			</router-link>
-		</div>
-			</div>
-		</div>
+      <div class="up">
+        <img class="profile"
+             src="@/assets/profile_pic.png"
+             alt="Mariana Inácio Profile Photo"
+             ref="image">
 
-		
-		</div>
-</section>
+        <div class="impose">
+          <div class="text">
+            <h1>Hi, I'm Mariana!</h1>
+            <h1>I'm a UX/UI Designer, who wants to become an unicorn!</h1>
+          </div>
 
+          <div class="btn">
+            <router-link to="/about">
+              <button>Learn more</button>
+              <div class="up"></div>
+            </router-link>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
 </template>
-
-
 
 <script>
 export default {
   name: 'About',
 
-  props: {
+  data() {
+    return {
+      centerX: 0,
+      centerY: 0,
+      x: 0,
+      y: 0,
+    }
   },
 
   methods: {
-		function() {
-		// Init
-		var container = document.getElementById("container");
-		var inner = document.getElementById("inner");
+    update(event) {
+      // Update coordinates to center
+      var e = event || window.event;
+      this.x = e.clientX - this.centerX;
+      this.y = (e.clientY - this.centerY) * -1;
+      
+      const image = this.$refs.image;
 
-		// Mouse
-		var mouse = {
-		_x: 0,
-		_y: 0,
-		x: 0,
-		y: 0,
-		updatePosition: function(event) {
-		var e = event || window.event;
-		this.x = e.clientX - this._x;
-		this.y = (e.clientY - this._y) * -1;
-		},
-		setOrigin: function(e) {
-		this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);
-		this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
-		},
-		show: function() {
-		return "(" + this.x + ", " + this.y + ")";
-		}
-		};
+      const x = (this.y / image.offsetHeight / 2).toFixed(2);
+      const y = (this.x / image.offsetWidth / 2).toFixed(2);
 
-		// Track the mouse position relative to the center of the container.
-		mouse.setOrigin(container);
+      const style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
+      image.style.transform = style;
+      image.style.webkitTransform = style;
+      image.style.mozTransform = style;
+      image.style.msTransform = style;
+      image.style.oTransform = style;
+    },
 
-		//-----------------------------------------
+    onMouseEnterHandler(event) {
+      this.update(event);
+    },
+    onMouseLeaveHandler(event) {
+      this.$refs.image.style = '';
+    },
+    onMouseMoveHandler(event) {
+      this.update(event);
+    },
+  },
 
-		var counter = 0;
-		var updateRate = 10;
-		var isTimeToUpdate = function() {
-		return counter++ % updateRate === 0;
-		};
+  mounted() {
+    const container = this.$refs.container;
+    container.onmouseenter = this.onMouseEnterHandler;
+    container.onmouseleave = this.onMouseLeaveHandler;
+    container.onmousemove = this.onMouseMoveHandler;
 
-		connsole.log('blah');
-		}
-
-	},
-
-}
-
+    // Calculate container's center position
+    this.centerX = container.offsetLeft + Math.floor(container.offsetWidth / 2);
+    this.centerY = container.offsetTop + Math.floor(container.offsetHeight / 2);
+  }
+};
 </script>
 
 <style scoped lang="scss" src='./about.scss'/>
