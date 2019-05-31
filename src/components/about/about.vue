@@ -12,16 +12,13 @@
 
         <div class="impose">
           <div class="text">
-            <h1>Hi, I'm Mariana!</h1>
-            <h1>I'm a UX/UI Designer, who wants to become an unicorn!</h1>
+            <h1>Hi, I'm Mariana! I'm a UX/UI Designer, who wants to become an unicorn!</h1>
           </div>
 
-          <div class="btn">
             <router-link to="/about">
               <button>Learn more</button>
               <div class="up"></div>
             </router-link>
-          </div>
         </div>
       </div>
       

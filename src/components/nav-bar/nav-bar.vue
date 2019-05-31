@@ -2,7 +2,7 @@
 	<nav>
 		
 		<router-link to='/'>
-			<button>mariana inácio</button>
+			<h1>mariana inácio</h1>
 		</router-link>
 
 		<div class="navigation">

@@ -23,9 +23,9 @@
 }
 
 .container {
-	display: visible;
+	display: flex;
 
-	@include mq('desktop') {
+	@include mq('tablet-wide') {
 		display: none;
 	}
 
