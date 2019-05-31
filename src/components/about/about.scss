@@ -14,7 +14,7 @@
   height: 100%;
   width: 100%;
 
-  perspective: 100px;
+  perspective: 125px;
 
   @include mq('tablet') {
     align-items: flex-end;
