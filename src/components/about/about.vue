@@ -6,10 +6,7 @@
 
       <div class="up">
         <img class="profile"
-             src="@/assets/profile_pic.png"
-             srcset="@/assets/profile_pic_500.jpg,
-             @/assets/profile_pic_1000.jpg 2x,
-             @/assets/profile_pic_1500.jpg 3x" 
+             src="@/assets/profile_pic.jpg"
              alt="Mariana Inácio Profile Photo"
              ref="image">
 
