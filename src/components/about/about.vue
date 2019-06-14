@@ -6,7 +6,7 @@
 
       <div class="up">
         <img class="profile"
-             src="@/assets/profile_pic.jpg"
+             src="@/assets/profile_pic.png"
              alt="Mariana Inácio Profile Photo"
              ref="image">
 
