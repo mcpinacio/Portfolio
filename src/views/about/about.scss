@@ -110,6 +110,34 @@ p {
 	}
 }
 
+a {
+	width: 60%;
+
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+
+	text-decoration: none;
+	color: $normal-colour;
+
+	&:hover {
+		color: $accent-colour;
+	}
+
+}
+
+svg {
+	width: 20px;
+	height: 25px;
+
+	margin-right: 25px;
+	
+	@include mq('tablet'){
+		width: 40px;
+		height: 45px;
+	}
+}
+
 .transition {
 	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
 }
@@ -265,3 +293,4 @@ img {
 		margin-bottom: 50px;
 	}
 }
+
