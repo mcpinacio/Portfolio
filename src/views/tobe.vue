@@ -12,7 +12,9 @@
 
 					<div class="year transition">
 						<h3 class="margin-top-none transition">Year</h3>
-						<p class="year2 transition">2016</p>
+						<ul class="lists transition">
+							<li>2016</li>
+						</ul>
 					</div>
 
 					<div class="deliverables transition">

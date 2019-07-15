@@ -259,27 +259,6 @@ p {
 
 }
 
-.year2 {
-	font-size: 12px;
-	line-height: 25px;
-
-	text-align: left;
-
-	margin-top: 0;
-
-		@include mq('tablet-wide'){
-			font-size: 14px;
-		}
-
-		@include mq('desktop'){
-			font-size: 16px;
-			line-height: 30px;
-		}
-
-		@include mq('desktop-wide'){
-			font-size: 18px;
-		}
-}
 
 ul {
 	list-style: none;
