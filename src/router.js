@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import Recollections from './views/recollections.vue'
 import TOBE from './views/tobe.vue'
 import Illustration from './views/illustration.vue'
+import TalknWalk from './views/talknwalk.vue'
 import AboutMe from './views/about/about.vue'
 
 
@@ -32,6 +33,11 @@ export default new Router({
       path: '/projects/illustration',
       name: 'illustration',
       component: Illustration
+    },
+    {
+    path: '/projects/talknwalk',
+    name: 'talknwalk',
+    component: TalknWalk
     },
     {
       path: '/about',

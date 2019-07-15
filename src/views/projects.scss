@@ -1,11 +1,8 @@
 @import 'src/assets/variables.scss';
 
-h1, h3 {
-	@include accent-bold;
-	text-align: left;
-}
-
 h1 {
+	@include accent-bold;
+
 	margin-bottom: 0px;
 	margin-left: 0px;
 	margin-top: 0px;
@@ -15,7 +12,7 @@ h1 {
 
 	
 	@include mq('tablet-wide'){
-		margin-left: 26%;
+		width: 70%;
 		text-align: left;
 	}
 	
@@ -33,44 +30,47 @@ h1 {
 	}
 }
 
-h2 {
+h2, h3, h4 {
+	text-align: left;
+}
+
+h2, h4 {
 	font: 100% $normal-font;
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 14px;
-	
-	text-align: center;
+
 		
 	line-height: 25px;
 
 	margin-top: 0px;
 
 	@include mq('tablet'){
-		text-align: left;
 		font-size: 18px;
 	}
 
 	@include mq('desktop'){
 		line-height: 35px;
-		text-align: left;
 		font-size: 20px;
 	}
 
 	@include mq('desktop-wide'){
 		line-height: 35px;
-		text-align: left;
 		font-size: 25px;
 	}
 }
 
 h3 {
-	margin-bottom: 6%;
+	font: 100% $normal-font;
+	font-weight: 700;
 	font-size: 12px;
-	text-align: center;
+
+	color: $accent-colour;
+
+	margin-bottom: 3px;
 
 
 	@include mq('tablet-small'){
 		font-size: 14px;
-		text-align: left;
 	}
 
 	@include mq('tablet'){
@@ -80,7 +80,42 @@ h3 {
 	@include mq('desktop'){
 		font-size: 18px;
 	}
+}
 
+h4 {
+	color: $accent-colour;
+	font-weight: 700;
+	
+	margin-bottom: 20px;
+
+	@include mq('tablet'){
+		margin-bottom: 40px;
+	}
+}
+
+h5 {
+	font-weight: 700;
+	font-size: 12px;
+
+	line-height: 25px;
+	text-align: left;
+
+	margin-top: 0px;
+	margin-bottom: 5px;
+
+	@include mq('tablet'){
+		font-size: 14px;
+	}
+
+	@include mq('desktop'){
+		line-height: 35px;
+		font-size: 16px;
+	}
+
+	@include mq('desktop-wide'){
+		line-height: 35px;
+		font-size: 20px;
+	}
 }
 
 p {
@@ -101,6 +136,14 @@ p {
 		font-size: 20px;
 		line-height: 35px
 	}
+}
+
+.comf {
+	font-family: 'Comfortaa', cursive;
+}
+
+.lat{
+	font-family: 'Lato', sans-serif;
 }
 
 .transition {
@@ -146,14 +189,16 @@ p {
 	width: 100%;
 
 	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-bottom: 55px;
+	margin-left: 0px;
+	margin-right: 0;
 
 	@include mq('tablet-wide'){
 		margin: 128px 0px;
 	}
 
 	@include mq('desktop'){
-		margin: 180px 0px;
+		margin: 200px 0px;
 	}
 
 	@include mq('desktop-super-wide'){
@@ -169,6 +214,9 @@ p {
 }
 
 .title {
+	display: flex;
+	justify-content: space-between;
+
 	width: 100%;
 	margin-bottom: 40px;
 }
@@ -192,10 +240,23 @@ p {
 
 }
 
-.year, .deliverables {
-	@include mq('tablet-wide'){
-		margin-bottom: 50px;
+.year, .deliverables, .role, .team {
+	width: 45%;
+	margin-bottom: 25px;
+
+	@include mq('tablet-small'){
+		width: 20%;
 	}
+
+	@include mq('tablet-small'){
+		width: 20%;
+	}
+
+	@include mq('tablet-wide'){
+		width: 100%;
+	}
+
+
 }
 
 .year2 {
@@ -227,21 +288,20 @@ ul {
 
 	> li {
 		font-size: 12px;
-		line-height: 23px;
+		font-weight: 400;
+		line-height: 25px;
 	
-		text-align: center;
+		text-align: left;
 		
 		margin-top: 0;
 
 		@include mq('tablet-wide'){
 			font-size: 14px;
-			line-height: 25px;
-			text-align: left;
+			line-height: 30px;
 		}
 
 		@include mq('desktop'){
-			font-size: 16px;
-			line-height: 30px;
+			font-size: 16px;	
 		}
 
 		@include mq('desktop-wide'){
@@ -256,10 +316,10 @@ ul {
 
 .description {
 	width: 100%;
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 
 	@include mq('tablet-wide'){	
-		width: 74%;
+		width: 70%;
 		margin-bottom: 0px;
 	}
 }
@@ -278,15 +338,19 @@ img {
 		margin-bottom: 25px;
 		}
 
-		@include mq('desktop-super-wide'){
-			margin-bottom: 35px;
-		}
+	@include mq('desktop-super-wide'){
+		margin-bottom: 35px;
+	}
 }
 
-.vertical {
-	justify-content: space-between;
-	flex-flow: row wrap;
+.noshadow {
+	box-shadow: none;
+}
+
+.gallery {
 	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
 
 	figure {
     	flex-flow: column;
@@ -294,19 +358,17 @@ img {
 
     	width: 100%;
 
-	    @include mq('tablet-wide'){
-			width: 45%
-		}
+	 //    @include mq('tablet-wide'){
+		// 	width: 45%
+		// }
 	}
 }
 
-.img-vertical {
+.full {
 	width: 100%;
-
-	
 }
 
-.img-horizontal {
+.half {
 	height: 45%;
 }
 
@@ -316,15 +378,18 @@ figcaption{
     line-height: 20px;
     font-size: 12px;
 
+    color: #494D53;
+
 	width: 100%;
 
 	@include mq('tablet'){
+		text-align: left;
 		line-height: 30px;
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 	@include mq('desktop-wide'){
-		font-size: 20px;
+		font-size: 16px;
 		line-height: 35px
 	}
 }
@@ -401,4 +466,46 @@ figure {
 			transform: translateY(0px);
 		}
 	}
+}
+
+
+
+.groups {
+	width: 100%;
+	margin-bottom: 45px;
+
+		@include mq('tablet-wide'){
+			margin-bottom: 80px;
+		}
+
+		@include mq('desktop'){
+			margin-bottom: 200px;	
+		}
+}
+
+.fonts {
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+.font_group {
+	margin-bottom: 15px;
+
+	p {
+		color: #494D53;
+	}
+}
+
+.colour {
+	text-align: left;
+
+	svg {
+		width: 146px;
+		height: 46px;
+
+			@include mq('desktop'){
+				width: 292px;
+				height: 92px;
+			}
+	}		
 }
