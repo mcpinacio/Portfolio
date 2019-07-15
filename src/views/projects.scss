@@ -325,8 +325,6 @@ ul {
 }
 
 img {	
-	box-shadow: 0px 0px 11px 0px rgba(16, 34, 60, 0.08);
-	
 	width: 100%;
 
 	object-fit: cover;
@@ -334,13 +332,7 @@ img {
 	margin: 0;
 	margin-bottom: 15px;
 
-	@include mq('desktop-wide'){
-		margin-bottom: 25px;
-		}
-
-	@include mq('desktop-super-wide'){
-		margin-bottom: 35px;
-	}
+	box-shadow: 0px 0px 11px 0px rgba(16, 34, 60, 0.08);
 }
 
 .noshadow {
@@ -351,17 +343,6 @@ img {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-
-	figure {
-    	flex-flow: column;
-   		display: flex;
-
-    	width: 100%;
-
-	 //    @include mq('tablet-wide'){
-		// 	width: 45%
-		// }
-	}
 }
 
 .full {
@@ -369,7 +350,7 @@ img {
 }
 
 .half {
-	height: 45%;
+	width: 45%;
 }
 
 figcaption{
@@ -396,20 +377,23 @@ figcaption{
 
 
 figure {
+	display: flex;
+	flex-flow: column;
+
 	margin: 0px;
 	margin-bottom: 60px;
 
-	@include mq('tablet-wide'){
-		margin-bottom: 128px;
-	}
+		@include mq('tablet-wide'){
+			margin-bottom: 128px;
+		}
 
-	@include mq('desktop-wide'){
-		margin-bottom: 160px;
-	}
+		@include mq('desktop-wide'){
+			margin-bottom: 160px;
+		}
 
-	@include mq('desktop-super-wide'){
-		margin-bottom: 240px;
-	}
+		@include mq('desktop-super-wide'){
+			margin-bottom: 240px;
+		}
 }
 
 .projnav {
@@ -472,6 +456,8 @@ figure {
 
 .groups {
 	width: 100%;
+
+	&:not(:last-child){
 	margin-bottom: 45px;
 
 		@include mq('tablet-wide'){
@@ -479,8 +465,9 @@ figure {
 		}
 
 		@include mq('desktop'){
-			margin-bottom: 200px;	
+			margin-bottom: 100px;	
 		}
+	}
 }
 
 .fonts {
@@ -489,7 +476,7 @@ figure {
 }
 
 .font_group {
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 
 	p {
 		color: #494D53;
