@@ -24,7 +24,7 @@ export default {
 
 <style lang="scss">
 @import 'src/assets/variables.scss';
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Muli:400,600,700&display=swap');
 
 *,
 *:after,
@@ -40,11 +40,11 @@ html, body{
 }
 
 #app {
-  font-family: 'Raleway', 'Montserrat', sans-serif;
+  font-family: 'Muli', 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #10223C;
 
   padding-left: 0;
   padding-right: 0;
