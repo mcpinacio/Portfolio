@@ -99,7 +99,7 @@
 	     				data-aos-duration="750"
 	     				data-aos-easing="ease-in-out" 
 	     				class="full">
-					<img src="@/assets/talknwalk/talknwalk_screens.png" alt="talknwalk illustration" class="transition">
+					<img src="@/assets/talknwalk/talknwalk_screens.png" alt="talknwalk illustration" class="noshadow transition">
 					<figcaption>Patient Profile Screens</figcaption>
 				</figure>
 				<figure data-aos="fade-in"
@@ -107,7 +107,7 @@
 	     				data-aos-duration="750"
 	     				data-aos-easing="ease-in-out" 
 	     				class="full">
-					<img src="@/assets/talknwalk/talknwalk_screens_therapist.png" alt="talknwalk illustration" class="transition">
+					<img src="@/assets/talknwalk/talknwalk_screens_therapist.png" alt="talknwalk illustration" class="noshadow transition">
 					<figcaption>Therapist Profile Screens</figcaption>
 				</figure>
 			</div>	
