@@ -98,6 +98,11 @@
 	  name: 'tobe',
 	  props: {
 
-	  }
+	  },
+	  methods: {
+    	track () {
+      	this.$ga.page('/')
+    		}
+  		}
 	}
 </script>
