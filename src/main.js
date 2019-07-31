@@ -1,9 +1,9 @@
 import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+import AOS from 'aos'
 import VueAnalytics from 'vue-analytics'
 
-import AOS from 'aos'
+import App from './App.vue'
+import router from './router'
 import 'aos/dist/aos.css'
 
 Vue.config.productionTip = false
@@ -16,7 +16,7 @@ Vue.use(VueAnalytics, {
 new Vue({
 	created () {
     AOS.init()
-  	},
+  },
   router,
   render: h => h(App)
 }).$mount('#app')
