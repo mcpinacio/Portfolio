@@ -68,40 +68,12 @@
 
 		<div class="gallery transition">
 			<div class="groups">
-				<h4>Fonts</h4>
-				<div class="font_group">
-					<h5 class="comf">Comfortaa</h5>
-					<p class="comf">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Xx Zz</p>
-					<p class="comf">0123456789</p>
-				</div>
-				<div class="font_group">
-					<h5 class="lat">Lato</h5>
-					<p class="lat">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Xx Zz</p>
-					<p class="lat">0123456789</p>
-				</div>
-			</div>
-
-			<div class="groups">
-				<h4>Colours</h4>
-				<div class="colour">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 92">
-						<g transform="translate(-672.5 -495)">
-							<circle cx="44.5" cy="44.5" r="44.5" transform="translate(674 496.5)" fill="#10223c" stroke="#f6f6f7" stroke-width="3"/><circle cx="44.5" cy="44.5" r="44.5" transform="translate(724 496.5)" fill="#35b8b6" stroke="#f6f6f7" stroke-width="3"/>
-							<circle cx="44.5" cy="44.5" r="44.5" transform="translate(774 496.5)" fill="#8894c3" stroke="#f6f6f7" stroke-width="3"/><circle cx="44.5" cy="44.5" r="44.5" transform="translate(824 496.5)" fill="#ddcecd" stroke="#f6f6f7" stroke-width="3"/>
-							<circle cx="44.5" cy="44.5" r="44.5" transform="translate(874 496.5)" fill="#feda4d" stroke="#f6f6f7" stroke-width="3"/>
-						</g>
-					</svg>
-				</div>
-			</div>
-
-			<div class="groups">
-				<h4>Wireframes</h4>
 				<figure data-aos="fade-in"
 	     				data-aos-delay="25"
 	     				data-aos-duration="750"
 	     				data-aos-easing="ease-in-out" 
 	     				class="full">
-					<img src="@/assets/talknwalk/talknwalk_screens.png" alt="talknwalk illustration" class="noshadow transition">
+					<img src="@/assets/talknwalk/client.png" alt="Talknwalk app screens, client profile" class="noshadow transition">
 					<figcaption>Patient Profile Screens</figcaption>
 				</figure>
 				<figure data-aos="fade-in"
@@ -109,7 +81,7 @@
 	     				data-aos-duration="750"
 	     				data-aos-easing="ease-in-out" 
 	     				class="full">
-					<img src="@/assets/talknwalk/talknwalk_screens_therapist.png" alt="talknwalk illustration" class="noshadow transition">
+					<img src="@/assets/talknwalk/therapist.png" alt="Talknwalk app screens, therapist profile" class="noshadow transition">
 					<figcaption>Therapist Profile Screens</figcaption>
 				</figure>
 			</div>	
@@ -122,7 +94,7 @@
 	     				data-aos-easing="ease-in-out" 
 	     				class="full">
 					<img src="@/assets/talknwalk/talknwalk_website.png" alt="talknwalk illustration" class="transition">
-					<figcaption>TalknWalk Website</figcaption>
+					<figcaption>Visit the <a href="https://talknwalk.pt/home" target="_blank">website</a></figcaption>
 				</figure>
 			</div>
 
