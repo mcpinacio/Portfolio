@@ -8,7 +8,7 @@
 	 		<a class="transition" href="mailto:mcpinacio@gmail.com">mcpinacio@gmail.com</a>
 	 		
 	 		<div class="social_left cl-effect-3 transition">
-	 			<a class="transition" href="https://www.behance.net/mcpinacio3afc" target="_blank">Behance</a>
+	 			<a class="transition" href="https://www.behance.net/marianacpinacio" target="_blank">Behance</a>
 	 			<a class="transition" href="https://dribbble.com/mcpinacio" target="_blank">Dribbble</a>
 	 			<a class="transition" href="https://www.linkedin.com/in/mariana-pereira-inacio/" target="_blank">Linkedin</a>
 	 			<a class="transition" href="https://github.com/mcpinacio" target="_blank">GitHub</a>
