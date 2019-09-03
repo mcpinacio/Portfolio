@@ -19,3 +19,11 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+#Google Drive Files
+*.tmp
+*.tmp.drive
+*.tmp.drivedownload
+.tmp
+.tmp.drive
+.temp.drivedownnload
