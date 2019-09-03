@@ -23,6 +23,7 @@ $breakpoints: (
 
 //colors
 $accent-colour: #DF7D91;
+$text-hover: #d24763;
 $normal-colour: #10223C;
 $contacts-colour: white;
 $navigation: #E9135E;
@@ -38,14 +39,30 @@ $normal-font: 'Muli', sans-serif;
 @mixin accent-bold {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
-
-	color: #DF7D91;
+	color: $accent-colour;
 }	
 
-
-@mixin normal-font {
-	font-family: 'Muli', sans-serif;
-	font-weight: 400;
-
+@mixin semi-font {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     color: $normal-colour;
 }
+
+@mixin normal-font {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+    color: $normal-colour;
+}
+
+@mixin light-font {
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    color: $normal-colour;
+}
+
+@mixin text {
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    color: $normal-colour;
+}
+
