@@ -12,8 +12,10 @@
 			<nav >
 				<button
 				   v-on:click.prevent="goToSection('home')">Home</button>
-				<button
-				   v-on:click.prevent="goToSection('aboutMe')">About Me</button>
+				   
+				<router-link to="/about">
+					<button>about</button>
+				</router-link>
 
 				<button
 					v-on:click.prevent="goToSection('projects')">Projects</button>

@@ -6,8 +6,9 @@
 		</router-link>
 
 		<div class="navigation">
-				<button
-				   v-on:click.prevent="goToSection('aboutMe')">about</button>
+				<router-link to="/about">
+					<button>about</button>
+				</router-link>
 
 				<button
 					v-on:click.prevent="goToSection('projects')">projects</button>
@@ -49,6 +50,7 @@
 	    toggleMenu() {
 	    	this.open = !this.open;
 	    },
+	    
 	    scrollTo(sectionId) {
 	    	const section = document.getElementById(sectionId);
 
