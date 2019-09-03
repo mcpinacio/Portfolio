@@ -24,7 +24,7 @@ export default {
 
 <style lang="scss">
 @import 'src/assets/variables.scss';
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Muli:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Muli:300,400,600,700&display=swap');
 
 *,
 *:after,
@@ -54,42 +54,35 @@ html, body{
   }
 }
 
+.about, .contacts {
+  height: 35rem;
+
+    @include mq('tablet-small'){
+    height: 100vh;
+  }
+}
+
 section { 
-  padding: 40px 40px;
+  padding: 80px 40px;
   margin: 0;
 
   margin-top: 60px;
 
-  height: 35rem;
-
   @include mq('tablet-small'){
-    padding: 80px 80px;
-    height: 36rem;
-  }
-
-  @include mq('tablet'){
-    height: 37rem;
+    padding: 100px 80px;
   }
 
   @include mq('tablet-wide'){
     padding: 80px 120px;
-    height: 41rem;
   }
 
   @include mq('desktop'){
-    padding: 100px 150px;
     margin-top: 55px;
+    height: 92vh;
   }
-
-   @include mq('desktop-wide'){
-    padding: 100px 120px;
-    margin-top: 55px;
-  }
-
 
   @include mq('desktop-super-wide'){
     padding: 100px 150px;
-    height: 64rem;
   }
 }
 

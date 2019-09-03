@@ -1,4 +1,5 @@
 @import 'src/assets/variables.scss';
+@import 'src/assets/fonts.scss';
 
 *,
 *:after,
@@ -9,79 +10,71 @@
 }
 
 .transition {
-	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
+	transition: all 0.5s ease;
 }
 
 .contacts {
- background: linear-gradient(60deg,#D62469,#2AB8C6);
-	
-	flex-flow: column;
-	display: flex;
 
-	justify-content: space-between;
+	display: flex;
+	flex-flow: column wrap;
 	align-items: flex-start;
+	justify-content: space-between;
+
+	background: -webkit-linear-gradient(240deg, #D62469, #2AB8C6);
+	background: -o-linear-gradient(240deg, #D62469, #2AB8C6);
+	background: linear-gradient(330deg, #D62469, #2AB8C6);
+
+	@include mq('phone-wide'){
+		justify-content: flex-end;
+	}
 }
 
 .text {
-	margin-top: 50px;
+	@include mq('phone-wide'){
+		margin-bottom: 110px;
+	}
+
+	@include mq('tablet'){
+		margin-bottom: 135px;
+	}
 
 	@include mq('desktop') {
-		margin-top: 100px;	
+		margin-bottom: 200px;	
 	}
 
-	@include mq('desktop-super-wide') {
-		margin-top: 200px;
+	@include mq('desktop') {
+		margin-bottom: 200px;	
 	}
 }
-
-
 
 h1 {
-	@include accent-bold;
-	text-align: left;
-
-	line-height: 60px;
-
-	font-size: 25px;
-	
 	color: white !important;
+	text-align: left !important;
 
-	margin: 0px 0px;
-
-	@include mq('tablet-wide') {
-		font-size: 35px;
+	&:not(:last-child){
+		margin-bottom: 5px;
 	}
 	
-	@include mq('desktop') {
-		font-size: 40px;
-	}
-
-	@include mq('desktop-wide') {
-		font-size: 45px;
-	}
-
-	@include mq('desktop-super-wide') {
-		font-size: 55px;
+	@include mq('phone-wide'){
 	}
 }
 
+/*--------------------------------------*/
+/*-------------HOVER EFFECTS-----------*/
+/*------------------------------------*/
+
 a {
+	@include normal-font;
+	color: white;
+	font-size: 14px;
+	text-align: left;
+	text-decoration: none;
+
 	display: inline-block;
 	position: relative;
 
-	font: 100% $accent-font;
-	font-size: 14px;
-
-	text-shadow: 0 0 1px rgba(255,255,255,0.3);
-	text-decoration: none;
-	text-align: left;
-
-	color: white;
-
 	&:hover, &:focus {
 		outline: none;
-		transform: scale(1.03);
-		
 	}
 
 	@include mq('tablet') {
@@ -98,6 +91,7 @@ a {
 
 	@include mq('desktop-super-wide') {
 		font-size: 30px;
+		letter-spacing: 1px;
 	}
 }
 
@@ -110,8 +104,8 @@ a {
 	top: 100%;
 	left: 0;
 	width: 100%;
-	height: 3px;
-	background: rgba(255, 255, 255, 0.5);
+	height: 2px;
+	background: rgba(255, 255, 255, 1);
 	border-radius: 25px;
 	content: '';
 	opacity: 0;
@@ -132,44 +126,68 @@ a {
 }
 
 
-.social {
-	justify-content: space-between;
-	flex-flow: column;
-	display: flex;
-
+/*--------------------------------------*/
+/*-----------LINKS PLACEMENT-----------*/
+/*------------------------------------*/
+.links {
 	width: 100%;
 	height: 20%;
 
+	display: flex;
+	flex-flow: column wrap;
+	align-items: flex-start;
+	justify-content: flex-end;	
+
 	@include mq('tablet-wide'){
-		align-items: baseline;
-		flex-flow: row;
+		height: 0;
 
 		margin-bottom: 40px;
 
-		height: 0;
+		flex-flow: row;
+		align-items: baseline;	
 	}
 }
 
-.social_left{
-	justify-content: space-between;
-	align-items: flex-start;
-	flex-flow: row;
-	display: flex;
+.email {
+	margin-bottom: 30px;
+	width: 80%;
+	text-align: left;
+}
 
-	margin-bottom: 0px;
+.social {
+	display: none;
 
-	width: 100%;
+	@include mq('tablet-small'){
+		width: 100%;
+		margin-bottom: 0px;
 
-	@include mq('tablet-small') {
-		width: 55%;
+		display: flex;
+		flex-flow: row;
+		align-items: flex-start;
+		justify-content: space-between;
 	}
 
 	@include mq('tablet-wide'){
 		align-items: flex-end;
 	}
+}
 
-	@include mq('desktop') {
-		width: 50%;
+.icons {
+	width: 80%;
+	height: 20%;
+	margin-bottom: 0px;
+
+	display: flex;
+	flex-flow: row;
+	align-items: flex-start;
+	justify-content: space-between;
+
+	@include mq('tablet-small'){
+		display: none;
 	}
+}
 
+svg {
+	height: 30px;
+	margin: 0 auto;
 }
