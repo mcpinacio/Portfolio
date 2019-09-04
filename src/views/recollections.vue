@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="banner">
+		<div class="banner" id="game">
 					<h1 class="transition">Recollections</h1>
 					<h3 class="transition">Game Design 2017</h3>		
 			</div>

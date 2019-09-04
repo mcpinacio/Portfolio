@@ -51,6 +51,10 @@ a {
 	flex-flow: row wrap;
 	align-content: flex-end;
 	justify-content: space-between;
+
+	@include mq('my-desktop'){
+		height: 70vh;
+	}
 }
 
 #talknwalkapp {
