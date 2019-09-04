@@ -1,5 +1,5 @@
 <template>
-	<section id="projects" class="projects-section">
+	<section class="projects-section">
 
 		<div class="images">	
 			<img :src="this.getImgSelected">
@@ -26,7 +26,7 @@
 				v-on:mouseover="itemSelected = 2"
 				v-on:mouseleave="itemSelected = -1">
 				<router-link to="/projects/ipsslab">
-					<h2>IPSSLAB by Unitate</h2>
+					<h2>IPSSLAB by UNITATE</h2>
 					<h3>Visual Identity</h3>
 				</router-link>
 			</li>

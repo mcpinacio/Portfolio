@@ -1,8 +1,8 @@
 <template>
   <div id="home" class="home">
     <About/> 
-    <ProjectsMobile class="mobile" id="projects"/>
-    <Projects class="desktop" id="projects"/>
+    <ProjectsMobile class="mobile" id="projects-mobile"/>
+    <Projects class="desktop" id="projects-desktop"/>
     <Contacts/>
   </div>
 </template>

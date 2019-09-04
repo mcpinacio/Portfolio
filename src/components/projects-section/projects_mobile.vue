@@ -1,5 +1,5 @@
 <template>
-	<section id="projects" class="projects-section">
+	<section class="projects-section">
 		<div 	class="block"
 				data-aos="fade-up"
 				data-aos-duration="850"
@@ -32,7 +32,7 @@
 			<router-link to="/projects/ipsslab"> 
 				<img src="images/ipsslab/0_preview.png" alt="ipss lab logo">
 				<div class="titles">
-					<h2>IPSSLAB by Unitate</h2>
+					<h2>IPSSLAB by UNITATE</h2>
 					<h3>Visual Identity</h3>
 				</div>
 			</router-link>
