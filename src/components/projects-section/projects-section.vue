@@ -17,7 +17,7 @@
 			<li class="group" 				
 				v-on:mouseover="itemSelected = 1"
 				v-on:mouseleave="itemSelected = -1">
-				<router-link to="/projects/talknwalk_web">
+				<router-link to="#">
 					<h2>TalknWalk Website</h2>
 					<h3>Web Design and Development</h3>
 				</router-link>
@@ -25,7 +25,7 @@
 			<li class="group"
 				v-on:mouseover="itemSelected = 2"
 				v-on:mouseleave="itemSelected = -1">
-				<router-link to="/projects/ipsslab">
+				<router-link to="#">
 					<h2>IPSSLAB by UNITATE</h2>
 					<h3>Visual Identity</h3>
 				</router-link>

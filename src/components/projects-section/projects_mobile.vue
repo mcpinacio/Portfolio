@@ -16,7 +16,7 @@
 				data-aos="fade-up"
 				data-aos-duration="850"
 				data-aos-anchor-placement="center-bottom">
-			<router-link to="/projects/talknwalk_web"> 
+			<router-link to="#"> 
 				<img src="/images/talknwalk_web/0_preview.png" alt="talnkwalk website screen on laptop">
 				<div class="titles">
 					<h2>TalknWalk Website</h2>
@@ -29,7 +29,7 @@
 				data-aos-delay="25"
 				data-aos-duration="850"
 				data-aos-anchor-placement="center-bottom">
-			<router-link to="/projects/ipsslab"> 
+			<router-link to="#"> 
 				<img src="images/ipsslab/0_preview.png" alt="ipss lab logo">
 				<div class="titles">
 					<h2>IPSSLAB by UNITATE</h2>
