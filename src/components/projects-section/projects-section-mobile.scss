@@ -1,0 +1,41 @@
+@import 'src/assets/variables.scss';
+@import 'src/assets/fonts.scss';
+
+.projects-section {
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.block {
+	width: 100%;
+
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+	justify-content: space-between;
+
+	transition: all 0.5s ease;
+
+	&:not(:last-child){
+		margin-bottom: 50px;
+	}
+
+	@include mq('tablet-small'){
+		width: 45%;
+
+		// &:not(:nth-last-child(n+1)){
+		// 	margin-bottom: 75px;
+		// }
+
+		// &:nth-last-child(2){
+		// 	margin-bottom: 0px;
+		// }
+	}
+}
+
+img {
+	width: 100%;
+	margin-bottom: 10px;
+}
