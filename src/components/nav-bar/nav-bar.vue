@@ -11,7 +11,7 @@
 				</router-link>
 
 				<button
-					v-on:click.prevent="goToSection('projects')">projects</button>
+					v-on:click.prevent="goToSection('projects-desktop')">projects</button>
 
 				<button href="#"
 				   v-on:click.prevent="goToSection('contacts')">

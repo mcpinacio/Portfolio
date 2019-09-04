@@ -1,5 +1,5 @@
 @import 'src/assets/variables.scss';
-
+@import 'src/assets/fonts.scss';
 
 .transition {
 	transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
@@ -55,7 +55,7 @@ nav {
 		align-items: center;
 		justify-content: space-between;
 
-		width: 25%;
+		width: 40%;
 	}
 }
 
