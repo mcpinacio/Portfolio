@@ -1,153 +1,88 @@
 @import 'src/assets/variables.scss';
+@import 'src/assets/fonts.scss';
 
+section {
+	padding: 0px 0px !important;
+}
+
+/*------------------------------------*/
+/*-------------TYPOGRAPHY-------------*/
+/*------------------------------------*/
 h1 {
-	@include accent-bold;
+	letter-spacing: 2px;
+	color: white !important;
+	text-transform: uppercase !important; 
 
-	margin-bottom: 0px;
-	margin-left: 0px;
-	margin-top: 0px;
-
-	text-align: center;
-	font-size: 30px;
-
-	
-	@include mq('tablet-wide'){
-		width: 70%;
-		text-align: left;
-	}
-	
-
-	@include mq('desktop'){
-		font-size: 40px;
-	}
-
-	@include mq('desktop-wide'){
-		font-size: 45px;
-	}
-
-	@include mq('desktop-super-wide'){
-		font-size: 55px;
-	}
+	margin-bottom: 160px;
 }
 
-h2, h3, h4 {
-	text-align: left;
-}
+h2{
+	width: 100%;
+	margin-bottom: 0;
 
-h2, h4 {
-	font: 100% $normal-font;
-	font-weight: 600;
-	font-size: 14px;
-
-		
-	line-height: 25px;
-
-	margin-top: 0px;
-
-	@include mq('tablet'){
-		font-size: 18px;
-	}
-
-	@include mq('desktop'){
-		line-height: 35px;
-		font-size: 20px;
-	}
-
-	@include mq('desktop-wide'){
-		line-height: 35px;
-		font-size: 25px;
-	}
+	line-height: 35px;
+	letter-spacing: 0 !important;
+	text-align: center !important;
 }
 
 h3 {
-	font: 100% $normal-font;
-	font-weight: 700;
-	font-size: 12px;
-
-	color: $accent-colour;
-
-	margin-bottom: 3px;
-
-
-	@include mq('tablet-small'){
-		font-size: 14px;
-	}
-
-	@include mq('tablet'){
-		font-size: 16px;
-	}
-
-	@include mq('desktop'){
-		font-size: 18px;
-	}
-}
-
-h4 {
-	color: $accent-colour;
-	font-weight: 700;
+	width: 100%;
 	
-	margin-bottom: 20px;
-
-	@include mq('tablet'){
-		margin-bottom: 40px;
-	}
-}
-
-h5 {
-	font-weight: 700;
-	font-size: 12px;
-
-	line-height: 25px;
-	text-align: left;
-
-	margin-top: 0px;
-	margin-bottom: 5px;
-
-	@include mq('tablet'){
-		font-size: 14px;
-	}
-
-	@include mq('desktop'){
-		line-height: 35px;
-		font-size: 16px;
-	}
-
-	@include mq('desktop-wide'){
-		line-height: 35px;
-		font-size: 20px;
-	}
-}
-
-p {
-	@include normal-font;
-	font-size: 14px;
-	line-height: 23px;
-
-	text-align: left;
-
-	margin: 0px 0px;
-
-	@include mq('tablet'){
-		line-height: 30px;
-		font-size: 16px;
-	}
-
-	@include mq('desktop-wide'){
-		font-size: 20px;
-		line-height: 35px
-	}
+	color: white !important;
+	font-weight: 400 !important;
+	text-align: center !important;
 }
 
 a {
 	text-decoration: none;
 	color: $accent-colour;
 }
+
 .comf {
 	font-family: 'Comfortaa', cursive;
 }
 
 .lat{
 	font-family: 'Lato', sans-serif;
+}
+
+/*------------------------------------*/
+/*---------------BANNER---------------*/
+/*------------------------------------*/
+.banner {
+	height: 65vh;
+
+	margin-top: 60px;
+	padding: 40px 40px;
+
+	display: flex;
+	flex-flow: row wrap;
+	align-content: flex-end;
+	justify-content: space-between;
+}
+
+#talknwalkapp {
+	background-color: #8491c0;
+}
+
+#game {
+	background-color: #ea7688;
+}
+
+#ipss {
+	background-color: #6fb4c7;
+}
+
+.header {
+	margin-bottom: 40px;
+
+	@include mq('tablet'){
+		margin-bottom: 50px;
+	}
+
+	@include mq('desktop'){
+		margin-bottom: 60px;
+	}
 }
 
 .transition {
@@ -161,103 +96,66 @@ a {
     flex-flow: column wrap;
     display: flex;
 
-	padding: 60px 40px;
+	padding: 60px 0px;
+}
 
+/*------------------------------------*/
+/*--------------PROJECTS--------------*/
+/*------------------------------------*/
+.projects {
+	width: 100%;
+
+	padding: 0px 35px;
+	margin-bottom: 45px;
+
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
 
 	@include mq('tablet-small'){
-		padding-left: 80px;
-		padding-right: 80px;
+		padding: 0px 80px;
 	}
 
 	@include mq('tablet-wide'){
-		padding-left: 128px;
-		padding-right: 128px;
+		padding: 0px 130px;
 	}
 
 	@include mq('desktop'){
-		padding-right: 200px;
-		padding-left: 200px;
+		padding: 0px 220px;
+		margin-bottom: 110px;
 	}
-
 	@include mq('desktop-super-wide'){
-		padding-right: 315px;
-		padding-left: 315px;
+		padding: 0px 330px;
+		margin-bottom: 250px;
+	}
+	@include mq('desktop-super-wide'){
+		padding: 0px 330px;
+		margin-bottom: 250px;
 	}	
 }
 
-.projects {
-	justify-content: space-between;
-	flex-flow: column wrap;
+.description {
 	display: flex;
-
-	width: 100%;
-
-	margin-top: 100px;
-	margin-bottom: 55px;
-	margin-left: 0px;
-	margin-right: 0;
-
-	@include mq('tablet-wide'){
-		margin: 128px 0px;
-	}
-
-	@include mq('desktop'){
-		margin: 200px 0px;
-	}
-
-	@include mq('desktop-super-wide'){
-		margin: 240px 0px;
-	}
-}
-
-
-.desc-container {
-	justify-content: space-between;
 	flex-flow: row wrap;
-	display: flex;
-}
-
-.title {
-	display: flex;
 	justify-content: space-between;
-
-	width: 100%;
-	margin-bottom: 40px;
 }
 
+/*------------------------------------*/
+/*------------INFOS LIST--------------*/
+/*------------------------------------*/
 .infos {
-	justify-content: space-around;
-	flex-flow: row wrap;
-	display: flex;
-	order: 2;
-	
 	width: 100%;
 
-	text-align: left;
-	
+	order: 2;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+
 	@include mq('tablet-wide'){
 		justify-content: flex-start;
 		flex-flow: column wrap;	
 		width: 17%;
 		order: 0;
-	}
-
-}
-
-.year, .deliverables, .role, .team {
-	width: 45%;
-	margin-bottom: 25px;
-
-	@include mq('tablet-small'){
-		width: 20%;
-	}
-
-	@include mq('tablet-small'){
-		width: 20%;
-	}
-
-	@include mq('tablet-wide'){
-		width: 100%;
 	}
 }
 
@@ -266,38 +164,77 @@ ul {
 	padding: 0px 0px;
 	margin: 0px 0px;
 
-	> li {
-		font-size: 12px;
-		font-weight: 400;
-		line-height: 25px;
+	&:last-child{
+		width: 100%
+	}
+
+	&:not(:last-child){
+		width: 40%;
+		margin-bottom: 20px;
+	}
+
+	@include mq('tablet-small'){
+		&:last-child{
+			width: 30%
+		}
+
+		&:not(:last-child){
+			width: 30%;
+		}
+
+		margin-bottom: 25px;
+	}
+
+	@include mq('tablet'){
+		&:last-child{
+			width: 100%
+		}
+
+		&:not(:last-child){
+			width: 100%;
+		}
+		margin-bottom: 25px;
+	}
 	
-		text-align: left;
-		
-		margin-top: 0;
-
-		@include mq('tablet-wide'){
-			line-height: 30px;
-		}
-
-		@include mq('desktop'){
-			font-size: 14px;	
-			line-height: 35px;
-		}
-
-		@include mq('desktop-wide'){
-			font-size: 16px;
-			line-height: 40px;
-		}
+	@include mq('desktop-wide'){
+		margin-bottom: 30px;
+	}
+	@include mq('desktop-super-wide'){
+		margin-bottom: 40px;
 	}
 }
 
-.margin-top-none {
-	margin-top: 0px;
+li {
+	@include text;
+	text-align: left;
+	font-size: 14px;
+	line-height: 21px;
+
+	margin: 0px 0px;
+	margin-bottom: 10px;
+
+	@include mq('tablet-wide'){
+	}
+
+	@include mq('desktop'){
+		font-size: 14px;	
+	}
+	@include mq('desktop-wide'){
+		font-size: 16px;
+	}
+	@include mq('desktop-super-wide'){
+		font-size: 18px;
+		line-height: 27px;
+		margin-bottom: 15px;
+	}
 }
 
-.description {
+/*------------------------------------*/
+/*----------------TEXT----------------*/
+/*------------------------------------*/
+.text {
 	width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 
 	@include mq('tablet-wide'){	
 		width: 70%;
@@ -305,6 +242,16 @@ ul {
 	}
 }
 
+.full {
+	@include mq('tablet-wide'){	
+		width: 100%;
+	}
+}
+
+
+/*------------------------------------*/
+/*---------------IMAGES---------------*/
+/*------------------------------------*/
 img {	
 	width: 100%;
 
@@ -312,12 +259,6 @@ img {
 	
 	margin: 0;
 	margin-bottom: 15px;
-
-	box-shadow: 0px 0px 11px 0px rgba(16, 34, 60, 0.08);
-}
-
-.noshadow {
-	box-shadow: none;
 }
 
 .gallery {
@@ -331,31 +272,59 @@ img {
 }
 
 .half {
-	width: 45%;
-}
-
-figcaption{
-	@include normal-font;
-	text-align: center;
-    line-height: 20px;
-    font-size: 12px;
-
-    color: #494D53;
-
 	width: 100%;
 
 	@include mq('tablet'){
-		text-align: left;
-		line-height: 30px;
-		font-size: 14px;
-	}
-
-	@include mq('desktop-wide'){
-		font-size: 16px;
-		line-height: 35px
+		width: 45%;
 	}
 }
 
+.padding {
+	padding: 0px 35px;
+
+	@include mq('phone-wide'){
+		padding: 0px 60px;
+	}
+	@include mq('tablet'){	
+		padding: 0px 80px;
+	}
+	@include mq('tablet-wide'){	
+		padding: 0px 130px;
+	}
+
+	@include mq('desktop'){
+		padding: 0px 180px;
+	}
+}
+
+.row {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+figcaption{
+	text-indent: none !important;
+	padding: 0px 35px;
+
+	@include mq('phone-wide'){
+		padding: 0px 60px;
+	}
+	@include mq('tablet'){	
+		padding: 0px 80px;
+	}
+	@include mq('tablet-wide'){	
+		padding: 0px 130px;
+	}
+
+	@include mq('desktop'){
+		padding: 0px 180px;
+	}
+}
+
+.none {
+	padding: 0px 0px;
+}
 
 figure {
 	display: flex;
