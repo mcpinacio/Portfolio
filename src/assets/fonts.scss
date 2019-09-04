@@ -1,5 +1,39 @@
 @import 'src/assets/variables.scss';
 
+//fonts
+$accent-font: 'Montserrat', sans-serif;
+$normal-font: 'Muli', sans-serif;
+
+@mixin accent-bold {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: $accent-colour;
+}	
+
+@mixin semi-font {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: $normal-colour;
+}
+
+@mixin normal-font {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+    color: $normal-colour;
+}
+
+@mixin light-font {
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    color: $normal-colour;
+}
+
+@mixin text {
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    color: $normal-colour;
+}
+
 a {
   text-decoration: none;
 }
@@ -84,13 +118,62 @@ h3 {
 	transition: font-size 0.5s ease;
 	
 	@include mq('desktop'){
-		font-size: 14px;
-		
+		font-size: 14px;		
 	}
 
 	@include mq('desktop-wide'){
+		font-size: 16px;
 	}
 
 	@include mq('desktop-super-wide'){
+		font-size: 18px;
 	}
+}
+
+h4 {
+	@include semi-font;
+	font-size: 14px;
+	text-align: left;
+	color: $accent-colour;
+	
+	margin: 0px 0px;
+	margin-bottom: 12px;
+
+	@include mq('desktop'){
+		font-size: 16px;
+		margin-bottom: 12px;
+	}
+	@include mq('desktop-wide'){
+		font-size: 18px;
+	}
+	@include mq('desktop-super-wide'){
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+}
+
+p, figcaption {
+	@include text;
+	font-size: 14px;
+	line-height: 28px;
+
+	text-align: left;
+
+	margin: 0px 0px;
+
+	@include mq('desktop'){
+		font-size: 16px;
+	}
+	@include mq('desktop-wide'){
+		font-size: 17px;
+		line-height: 30px;
+	}
+	@include mq('desktop-super-wide'){
+		font-size: 18px;
+		line-height: 37px;
+	}
+}
+
+p {
+	text-indent: 30px;
 }
