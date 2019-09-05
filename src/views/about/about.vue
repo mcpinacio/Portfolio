@@ -19,60 +19,69 @@
 
 					<div class="text">
 						<h2 class=" transition">Hi, my name is Mariana Inácio and I want to be an unicorn.</h2>
-						<p class="transition">“A unicorn? What a strange thing to aspire to!” you might think.<br>Although there are plenty of mythical creatures to look up to, but “unicorn” is the nickname often given to designers who know how to code and that’s exactly who I want to become.<br>I studied Multimedia Arts (Interactive Environments) at Faculdade de Belas Artes da Universidade de Lisboa, which awoken my love for art and art history and sparked my interest in programming. 
-						<br>As much as I love art and perceive it as means to express myself, I also <b>love to solve problems</b>, so I resorted to Design to satisfy this need. Consequently, I took a postgraduate degree in Digital Design at DeMonfort University in Leicester, in the UK.<br>I am <b>immensely curious</b> and strive to keep learning and bettering myself, so I enrolled in a yearlong Web Design course where I am learning about not only how to design a web site but how to code it (HTML/CSS/javascript), a skill that I am very keen on keep working on, even if self-taught.<br>What excites me the most about UX/UI Design and programming is the challenge of creating an user experience that is cohesive, simple and intuitive.
-						I am very <b>independent</b>, <b>pro-active</b> and <b>pragmatic</b>. I strive when challenged and I keep pushing myself outside of my comfort zone. 
-</p>
+						<p class="transition">“A unicorn? What a strange thing to aspire to!” you might think.</p>
+						<p class="transition">Although there are plenty of mythical creatures to look up to, but “unicorn” is the nickname often given to designers who know how to code and that’s exactly who I want to become.</p>
+						<p class="transition">I studied Multimedia Arts (Interactive Environments) at Faculdade de Belas Artes da Universidade de Lisboa, which awoken my love for art and art history and sparked my interest in programming.</p>
+						<p class="transition">As much as I love art and perceive it as means to express myself, I also <b>love to solve problems</b>, so I resorted to Design to satisfy this need. Consequently, I took a postgraduate degree in Digital Design at DeMonfort University in Leicester, in the UK.</p>
+						<p class="transition">I am <b>immensely curious</b> and strive to keep learning and bettering myself, so I enrolled in a yearlong Web Design course where I am learning about not only how to design a web site but how to code it (HTML/CSS/javascript), a skill that I am very keen on keep working on, even if self-taught.</p>
+						<p class="transition">What excites me the most about UX/UI Design and programming is the challenge of creating an user experience that is cohesive, simple and intuitive.
+						I am very <b>independent</b>, <b>pro-active</b> and <b>pragmatic</b>. I strive when challenged and I keep pushing myself outside of my comfort zone.</p>
 					</div>
 				</div>
 
 					<div class="more">
 						<div class="titles">
-							<h3>Work<br>Experience</h3>
+							<h2 class="pink">Work Experience</h2>
 						</div>
 
 						<div class="work">
 							<div class="job">
-								<h2>UX/UI Designer</h2>
-								<p>IRON Portugal<br>March to May 2019</p>
+								<h3>UX/UI Designer</h3>
+								<p class="none">IRON Portugal</p>
+								<p class="none">March to May 2019</p>
 							</div>
 
 							<div class="job">
-								<h2>Junior Designer</h2>
-								<p>IRON Portugal<br>September 2018 to February 2019</p>
+								<h3>Junior Designer</h3>
+								<p class="none">IRON Portugal</p>
+								<p class="none">September 2018 to February 2019</p>
 							</div>
 
 							<div class="job">
-								<h2>Marketing Intern</h2>
-								<p>Noesis<br>June to September 2014</p>
+								<h3>Marketing Intern</h3>
+								<p class="none">Noesis</p>
+								<p class="none">June to September 2014</p>
 							</div>
 						</div>
 					</div>
 
 					<div class="more">
 						<div class="titles">
-							<h3>Academic<br>Background</h3>
+							<h2 class="pink">Academic Background</h2>
 						</div>
 
 						<div class="work">
 							<div class="job">
-								<h2>Web Design</h2>
-								<p>ETIC Lisboa<br>October 2018 to June 2019</p>
+								<h3>Web Design</h3>
+								<p class="none">ETIC Lisboa</p>
+								<p class="none">October 2018 to June 2019</p>
 							</div>
 							<div class="job">
-								<h2>Postgraduate Degree in Digital Design with Honours</h2>
-								<p>DeMonfort University, Leicester UK<br>September 2017 to March 2018</p>
+								<h3>Postgraduate Degree in Digital Design with Honours</h3>
+								<p class="none">DeMonfort University, Leicester UK</p>
+								<p class="none">September 2017 to March 2018</p>
 							</div>
 							<div class="job">
-								<h2>Bachelor Degree in Multimedia Art - Interactive Environments</h2>
-								<p>Faculdade de Belas Artes da Universidade de Lisboa<br>September 2014 to July 2017</p>
+								<h3>Bachelor Degree in Multimedia Art - Interactive Environments</h3>
+								<p class="none">Faculdade de Belas Artes da Universidade de Lisboa</p>
+								<p class="none">September 2014 to July 2017</p>
 							</div>
 						</div>
 					</div>
 		
 					<div class="more">
 						<div class="titles"></div>
-						<div class="work">
+						<div class="work cv">
 								<a href="@/public/Mariana_Inacio_CV.pdf" download>
 									<svg xmlns="http://www.w3.org/2000/svg" width="50" height="55" viewBox="0 0 70 74.821">
 										<g transform="translate(-16)">
@@ -93,7 +102,7 @@
 											<path d="M193.8,145.4a1.139,1.139,0,0,0,.845-.353,1.156,1.156,0,0,0,.345-.837v-3.16h2.265a1.107,1.107,0,0,0,.808-.316,1.055,1.055,0,0,0-.007-1.528,1.119,1.119,0,0,0-.8-.316h-2.265v-2.073h2.676a1.013,1.013,0,0,0,.764-.323,1.051,1.051,0,0,0,.309-.749,1.065,1.065,0,0,0-.316-.786,1.032,1.032,0,0,0-.757-.316H193.81a1.156,1.156,0,0,0-.868.367,1.2,1.2,0,0,0-.353.852v8.348a1.121,1.121,0,0,0,.368.838A1.179,1.179,0,0,0,193.8,145.4Z" transform="translate(-150.915 -115.139)" fill="#10223c"/>
 										</g>
 									</svg>
-									<h2>Download my CV</h2>
+									<h3>Download my CV</h3>
 								</a>
 						</div>
 					</div>

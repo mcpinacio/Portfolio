@@ -3,7 +3,7 @@
     <nav-bar/>
     <router-view/>
   <footer>
-  <p>designed and developed by mariana inácio</p>
+  <p class="center">designed and developed by mariana inácio</p>
 </footer>
   </div>
 </template>
@@ -82,8 +82,6 @@ section {
 
 footer {
   margin: 35px 0;
-
-  @include mq('desktop')
 
   p {
     @include normal-font;
