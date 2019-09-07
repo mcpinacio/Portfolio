@@ -8,7 +8,7 @@
 		<div class="container transition">
 			<div class="projects transition">
 				<div class="header transition">
-					<h2>A mental health app designed to connect patients and therapists more efficiently</h2>
+					<h2>The visual identity for a sub-brand</h2>
 				</div>
 
 				<div class="description  transition">
@@ -32,31 +32,36 @@
 			</div>
 
 			<div class="gallery transition">
-				<div class="groups">
-					<figure data-aos="fade-in"
+					<figure data-aos="fade-up"
 		     				data-aos-duration="500"
-		     				data-aos-easing="ease-in-out">
-						<img src="/images/ipsslab/ipsslab_logo_full.png" alt="" class="transition">
+		     				data-aos-easing="ease-in-out"
+		     				class="full">
+						<img src="/images/ipsslab/ipsslab_logo_full.png" alt="IPSS logo on a dark background" class="transition">
 						<figcaption>IPSS Lab logo on a dark blue background</figcaption>
 					</figure>
-					<figure data-aos="fade-in"
+					<figure data-aos="fade-up"
 		     				data-aos-duration="500"
 		     				data-aos-easing="ease-in-out" 
-		     				class="padding">
+		     				class="full">
 						<img src="/images/ipsslab/logo_elements.png" alt="" class="transition">
-						<figcaption class="none">IPSS Lab logo elements (from left to right): parent logo, parent brand elemnt and child-brand new logo</figcaption>
+						<figcaption>IPSS Lab logo elements (from left to right): parent logo, parent brand elemnt and child-brand new logo</figcaption>
 					</figure>
-					
-				</div>	
+					<figure data-aos="fade-up"
+		     				data-aos-duration="500"
+		     				data-aos-easing="ease-in-out">
+						<img src="/images/ipsslab/alphabet.png" alt="" class="transition half">
+						<figcaption>legenda</figcaption>
+					</figure>
+	
 			</div>
 
 			<div class="projnav">
 				<div>
-					<router-link to="/projects/illustration">previous</router-link>
+					<router-link to="/projects/talknwalk_web">previous</router-link>
 				</div>
 
 				<div>
-					<router-link to="/projects/tobe">next</router-link>
+					<router-link to="/projects/illustration">next</router-link>
 				</div>
 			</div>
 

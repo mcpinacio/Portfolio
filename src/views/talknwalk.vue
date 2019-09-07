@@ -46,7 +46,6 @@
 			</div>
 
 			<div class="gallery transition">
-				<div class="groups">
 					<figure data-aos="fade-in"
 		     				data-aos-duration="500"
 		     				data-aos-easing="ease-in-out" 
@@ -58,10 +57,9 @@
 		     				data-aos-duration="500"
 		     				data-aos-easing="ease-in-out" 
 		     				class="full">
-						<img src="/images/talknwalk_app/doctor_web.png" alt="Talknwalk app screens, therapist profile" class="noshadow transition">
+						<img src="/images/talknwalk_app/doctor_web.png" alt="Talknwalk app screens, therapist profile" class="transition">
 						<figcaption>On the other hand, therapists will have access to a wider range of patients, the secure video-calls and chats allow them to work remotely thus being more independent and reducing commute and space renting costs, the therapists has access to information prior to the first interaction with the patient, if the later wishes so, making the diagnosis and therapy more efficient.</figcaption>
-					</figure>
-				</div>	
+					</figure>	
 			</div>
 
 			<div class="projnav">

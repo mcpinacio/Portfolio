@@ -41,67 +41,55 @@
 				</div>
 
 				<div class="gallery transition">
-					<div class="groups">
-						<figure data-aos="fade-up"
-			     				data-aos-duration="500"
-			     				data-aos-easing="ease-in-out" >
-							<img src="/images/recollections/four_seasons.png" alt="four seasons">
-							<figcaption>The fours seasons backgrounds combined</figcaption>
-						</figure>
-
-						<div class="padding row">
-							<figure data-aos="fade-up"
-				     				data-aos-duration="500"
-				     				data-aos-easing="ease-in-out" 
-				     				class="half">
-								<img src="/images/recollections/poster_character.png" alt="poster with character">
-								<figcaption class="none">Game poster with game elements</figcaption>
-							</figure>
-							<figure data-aos="fade-up"
-				     				data-aos-duration="500"
-				     				data-aos-easing="ease-in-out" 
-				     				class="half">
-								<img src="/images/recollections/poster_sun.png" alt="poster with sun and trees">
-								<figcaption class="none">Game poster inspired by the winter background</figcaption>
-							</figure>
-						</div>
-
-						<figure data-aos="fade-up"
-			     				data-aos-duration="500"
-			     				data-aos-easing="ease-in-out" >
-							<img src="/images/recollections/winter.png" alt="winter background">
-							<figcaption>Winter bacground, it is the last level and associated with the elderly</figcaption>
-						</figure>
-
-						<div class="padding row">
-							<figure data-aos="fade-up"
-				     				data-aos-duration="500"
-				     				data-aos-easing="ease-in-out" class="half">
-								<img src="/images/recollections/characters.png" alt="characters">
-								<figcaption class="none">Male and female characteres life cycle</figcaption>
-							</figure>
-							<figure data-aos="fade-up"
-				     				data-aos-duration="500"
-				     				data-aos-easing="ease-in-out" 
-				     				class="half">
-								<img src="/images/recollections/seasons_menu.png" alt="seasons menu">
-								<figcaption class="none">Menu level UI</figcaption>
-							</figure>
-						</div>
-
-					</div>	
+					<figure data-aos="fade-up"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out">
+						<img src="/images/recollections/four_seasons.png" alt="four seasons vectorial illustration">
+						<figcaption>The fours seasons backgrounds combined</figcaption>
+					</figure>
+					<figure data-aos="fade-up"
+							data-aos-duration="500"
+							data-aos-easing="ease-in-out" 
+							class="half">
+						<img src="/images/recollections/poster_character.png" alt="vectorial illustration game poster with character">
+						<figcaption>Game poster with game elements</figcaption>
+					</figure>
+					<figure data-aos="fade-up"
+							data-aos-duration="500"
+							data-aos-easing="ease-in-out" 
+							class="half">
+						<img src="/images/recollections/poster_sun.png" alt="vectorial illustration game poster with trees and sunset">
+						<figcaption>Game poster inspired by the winter background</figcaption>
+					</figure>
+					<figure data-aos="fade-up"
+							data-aos-duration="500"
+							data-aos-easing="ease-in-out" >
+						<img src="/images/recollections/winter.png" alt="winter background vectorial illustration">
+						<figcaption>Winter bacground, it is the last level and associated with the elderly</figcaption>
+					</figure>
+					<figure data-aos="fade-up"
+							data-aos-duration="500"
+							data-aos-easing="ease-in-out" class="half">
+						<img src="/images/recollections/characters.png" alt="vectorial illustration game characters">
+						<figcaption>Male and female characteres life cycle</figcaption>
+					</figure>
+					<figure data-aos="fade-up"
+							data-aos-duration="500"
+							data-aos-easing="ease-in-out" 
+							class="half">
+						<img src="/images/recollections/seasons_menu.png" alt="puzzle-platform game level menu">
+						<figcaption>Menu level UI</figcaption>
+					</figure>	
 				</div>
 
 				<div class="projnav">
 					<div>
 						<router-link to="/projects/illustration">previous</router-link>
 					</div>
-
 					<div>
 						<router-link to="/projects/talknwalk">next</router-link>
 					</div>
 				</div>
-
 			</div>
 	</div>
 </template>
