@@ -59,8 +59,6 @@ section {
   padding: 80px 40px;
   margin: 0;
 
-  //margin-top: 60px;
-
   @include mq('tablet-small'){
     padding: 100px 80px;
   }
@@ -81,7 +79,27 @@ section {
 
 
 footer {
-  margin: 35px 0;
+  background: $background-colour-blue;
+
+  padding: 10px 35px;
+
+  @include mq('tablet-small'){
+    padding: 10px 80px;
+  }
+
+  @include mq('tablet-wide'){
+    padding: 10px 130px;
+  }
+
+  @include mq('desktop'){
+    padding: 10px 220px;
+  }
+  @include mq('desktop-super-wide'){
+    padding: 10px 330px;
+  }
+  @include mq('desktop-super-wide'){
+    padding: 10px 330px;
+  } 
 
   p {
     @include normal-font;
@@ -91,7 +109,7 @@ footer {
     
     opacity: 0.5;
 
-    transition: 0.25s cubic-bezier(0.68, 0.16, 0.25, 1);
+    ;
 
       @include mq('tablet'){
         font-size: 14px;
