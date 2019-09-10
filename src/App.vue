@@ -102,22 +102,8 @@ footer {
   } 
 
   p {
-    @include normal-font;
-    font-size: 12px;
-
-    text-align: center;
-    
-    opacity: 0.5;
-
-    ;
-
-      @include mq('tablet'){
-        font-size: 14px;
-      }
-
-      @include mq('desktop-wide'){
-        font-size: 16px;
-      }
+    text-align: center !important;
+    opacity: 0.3 !important;
   }
 }
 
