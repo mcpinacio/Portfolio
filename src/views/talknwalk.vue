@@ -46,21 +46,46 @@
 				</div>
 			</div>
 
-			<div class="gallery transition">
+			<div class="gallery transition desktop">
 					<figure data-aos="fade-up"
 		     				data-aos-duration="500"
-		     				data-aos-easing="ease-in-out" 
-		     				class="full">
-						<img src="/images/talknwalk_app/patient_web.png" alt="minimalistic app screens, patients profile over purple background" class="noshadow transition">
+		     				data-aos-easing="ease-in-out">
+						<img src="/images/talknwalk_app/patient_web.png" alt="minimalistic app screens, patients profile over purple background" class="transition">
 						<figcaption>Patients' app view. From left to right. The home screen where patients' can check their upcoming appointments and persnonalized recommendations. The statitics screens, where the user can keep track of their symptoms. The messages screen, where patients and therapists interact privately, they can message or video-call each other, make appointments or even check eachother's profile. Lastly, the user profile screen, where the user has access to the settings menu, their biography and main topics they want to discuss with a therapist.</figcaption>
 					</figure>
 					<figure data-aos="fade-up"
 		     				data-aos-duration="500"
-		     				data-aos-easing="ease-in-out" 
-		     				class="full">
+		     				data-aos-easing="ease-in-out">
 						<img src="/images/talknwalk_app/doctor_web.png" alt="minimalistic app screens, therapist profile over pink background" class="transition">
-						<figcaption>Patients' app view. From left to right. The home scree, where therapists can keep track of their appointments. The wallet screen, where the user can check all the transactions made in app. The conversation screen, showing the active conversations and allowing the therapist to start new ones. And, finally, the user profile, where the user has access to the settings menu, their biography, their registration number, their speacilist area and where they can set their hourly fees.</figcaption>
+						<figcaption>Patients' app view. From left to right. The home screen, where therapists can keep track of their appointments. The wallet screen, where the user can check all the transactions made in app. The conversation screen, showing the active conversations and allowing the therapist to start new ones. And, finally, the user profile, where the user has access to the settings menu, their biography, their registration number, their speacilist area and where they can set their hourly fees.</figcaption>
 					</figure>	
+			</div>
+
+			<div class="gallery transition mobile">
+					<figure data-aos="fade-up"
+		     				data-aos-duration="500"
+		     				data-aos-easing="ease-in-out">
+						<img src="/images/talknwalk_app/mobile_pat_1.png" alt="minimalistic app screens, patients profile over purple background" class="transition">
+						<figcaption>Patients' app view. From left to right. The home screen where patients' can check their upcoming appointments and persnonalized recommendations. The statitics screens, where the user can keep track of their symptoms.</figcaption>
+					</figure>
+					<figure data-aos="fade-up"
+		     				data-aos-duration="500"
+		     				data-aos-easing="ease-in-out">
+						<img src="/images/talknwalk_app/mobile_pat_2.png" alt="minimalistic app screens, patients profile over purple background" class="transition">
+						<figcaption>Patients' app view. From left to right. The messages screen, where patients and therapists interact privately, they can message or video-call each other, make appointments or even check eachother's profile. The user profile screen, where the user has access to the settings menu, their biography and main topics they want to discuss with a therapist.</figcaption>
+					</figure>					
+					<figure data-aos="fade-up"
+		     				data-aos-duration="500"
+		     				data-aos-easing="ease-in-out">
+						<img src="/images/talknwalk_app/mobile_doc_1.png" alt="minimalistic app screens, therapist profile over pink background" class="transition">
+						<figcaption>Patients' app view. From left to right. The home screen, where therapists can keep track of their appointments. The wallet screen, where the user can check all the transactions made in app.</figcaption>
+					</figure>
+					<figure data-aos="fade-up"
+		     				data-aos-duration="500"
+		     				data-aos-easing="ease-in-out">
+						<img src="/images/talknwalk_app/mobile_doc_2.png" alt="minimalistic app screens, therapist profile over pink background" class="transition">
+						<figcaption>Patients' app view. From left to right. The conversation screen, showing the active conversations and allowing the therapist to start new ones. And the user profile, where the user has access to the settings menu, their biography, their registration number, their speacilist area and where they can set their hourly fees.</figcaption>
+					</figure>		
 			</div>
 
 			<div class="projnav">

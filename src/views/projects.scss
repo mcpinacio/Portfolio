@@ -191,7 +191,7 @@ ul {
 		margin-bottom: 25px;
 	}
 
-	@include mq('tablet'){
+	@include mq('tablet-wide'){
 		&:last-child{
 			width: 100%
 		}
@@ -245,12 +245,6 @@ li {
 	@include mq('tablet-wide'){	
 		width: 70%;
 		margin-bottom: 0px;
-	}
-}
-
-.full {
-	@include mq('tablet-wide'){	
-		width: 100%;
 	}
 }
 
@@ -310,6 +304,28 @@ figure {
 			}
 		}
 }
+
+.desktop {
+	display: none;
+
+	@include mq('tablet-wide'){
+		display: flex;
+	}
+}
+
+.mobile {
+	display: flex;
+
+	@include mq('tablet-wide'){
+		display: none;
+	}
+}
+
+
+
+/*------------------------------------*/
+/*-------------BOTTOM NAV-------------*/
+/*------------------------------------*/
 
 .projnav {
 	justify-content: space-between;
