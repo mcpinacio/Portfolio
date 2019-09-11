@@ -82,7 +82,7 @@
 					<div class="more">
 						<div class="titles"></div>
 						<div class="work cv">
-								<a href="@/public/Mariana_Inacio_CV.pdf" download>
+								<a href="/Mariana_Inacio_CV.pdf" download>
 									<svg xmlns="http://www.w3.org/2000/svg" width="50" height="55" viewBox="0 0 70 74.821">
 										<g transform="translate(-16)">
 											<g transform="translate(17.167 1.167)">
