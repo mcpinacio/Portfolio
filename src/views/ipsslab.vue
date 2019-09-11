@@ -8,7 +8,7 @@
 		<div class="container transition">
 			<div class="projects transition">
 				<div class="header transition">
-					<h2>The visual identity for a sub-brand</h2>
+					<h2>The visual identity and branding for a social economy education provider</h2>
 				</div>
 
 				<div class="description  transition">
@@ -36,21 +36,28 @@
 		     				data-aos-duration="500"
 		     				data-aos-easing="ease-in-out"
 		     				class="full">
-						<img src="/images/ipsslab/ipsslab_logo_full.png" alt="IPSS logo on a dark background" class="transition">
+						<img src="/images/ipsslab/ipsslab_logo_full.png" alt="vectorial geometric logo on a dark background" class="transition">
 						<figcaption>IPSS Lab logo on a dark blue background</figcaption>
 					</figure>
 					<figure data-aos="fade-up"
 		     				data-aos-duration="500"
 		     				data-aos-easing="ease-in-out" 
-		     				class="full">
-						<img src="/images/ipsslab/logo_elements.png" alt="" class="transition">
-						<figcaption>IPSS Lab logo elements (from left to right): parent logo, parent brand elemnt and child-brand new logo</figcaption>
+		     				class="half">
+						<img src="/images/ipsslab/logo_elements_1.png" alt="vectorial geometric logo breakdown" class="transition">
+						<figcaption>IPSS Lab logo elements (top to bottom): parent logo, parent brand elemnt and child-brand new logo</figcaption>
+					</figure>
+					<figure data-aos="fade-up"
+		     				data-aos-duration="500"
+		     				data-aos-easing="ease-in-out"
+		     				class="half">
+						<img src="/images/ipsslab/custom_font.png" alt="futuristic custom font">
+						<figcaption>Custom Font</figcaption>
 					</figure>
 					<figure data-aos="fade-up"
 		     				data-aos-duration="500"
 		     				data-aos-easing="ease-in-out">
-						<img src="/images/ipsslab/alphabet.png" alt="" class="transition half">
-						<figcaption>legenda</figcaption>
+						<img src="/images/ipsslab/usage.png" alt="examples of logo usage">
+						<figcaption>Logo and brand usage</figcaption>
 					</figure>
 	
 			</div>
