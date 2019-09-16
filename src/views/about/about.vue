@@ -12,7 +12,7 @@
 				<div class="pic" data-aos="fade-in"
 					data-aos-duration="600"
 					data-aos-easing="ease-in-out">
-				<img src="@/assets/profile_pic.png" alt="Mariana Inácio Profile Pictue">
+				<img src="/images/profile_pic.jpg" alt="Mariana Inácio Profile Picture">
 				</div>
 
 				<div class="description transition">
