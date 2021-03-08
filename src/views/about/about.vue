@@ -24,7 +24,9 @@
 						<p class="transition">I am <b>immensely curious</b> and <b>focused</b>, I strive to keep learning and bettering myself. I am extremely <b>organized</b> and <b>pragmatic</b>.I truly love to solve problems, especially if it is the right one.</p>
 					</div> 
 				</div>
-
+			</div>
+			
+			<div class="desc-container transition">
 					<div class="more">
 						<div class="titles">
 							<h2 class="pink">Work Experience</h2>
