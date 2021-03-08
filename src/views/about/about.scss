@@ -136,10 +136,20 @@ span {
 	display: flex;
 
 	width: 100%;
+	margin-bottom: 50px;
 	
 
 	@include mq('table-wide') {
 		flex-flow: column wrap;
+		margin-bottom: 100px;
+	}
+
+	@include mq('desktop'){
+		margin-bottom: 180px;
+	}
+
+	@include mq('desktop-super-wide'){
+		margin-bottom: 240px;
 	}
 }
 

@@ -25,8 +25,7 @@
 					</div> 
 				</div>
 			</div>
-			
-			<div class="desc-container transition">
+			<div class="transition">
 					<div class="more">
 						<div class="titles">
 							<h2 class="pink">Work Experience</h2>
