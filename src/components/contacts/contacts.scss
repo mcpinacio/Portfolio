@@ -27,6 +27,11 @@
 	@include mq('phone-wide'){
 		justify-content: flex-end;
 	}
+
+	@include mq('desktop-wide'){
+		padding-left: 300px;
+		padding-left: 300px;
+	}
 }
 
 .text {

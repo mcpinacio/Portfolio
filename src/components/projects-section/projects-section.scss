@@ -22,6 +22,12 @@ section {
 	text-align: left;
 
 	background-color: $background-colour-blue;
+
+	
+	@include mq('desktop-wide'){
+		padding-left: 300px;
+		padding-left: 300px;
+	}
 }
 
 ul {
