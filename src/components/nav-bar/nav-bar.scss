@@ -37,7 +37,6 @@ nav {
 
 	@include mq('desktop'){
 		padding: 0 70px;
-
 		height: 55px;
 	}
 
@@ -45,6 +44,7 @@ nav {
 		padding: 0px 600px;	
 
 		height: 75px;
+	}
 }
 
 .navigation {

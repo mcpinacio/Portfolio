@@ -21,7 +21,8 @@
 						<h2 class=" transition">Hi, my name is Mariana Inácio and I'm a UX/UI designer based in Lisbon.</h2>
 						<p class="transition">I love fine art and beautiful design. However, UX/UI design is more than creating beautiful products, it is about creating <b>consistent experiences</b> that are easy to use and allow the end user to feel confident using a specific product. </p>
 						<p class="transition">I believe that my role as a designer is to be the voice of the end user and that the best way to understand if I’m solving the <b>right problem</b> and solving it well enough is through design research, may it be user testing or analytics reports.</p>
-						<p class="transition">I am <b>immensely curious</b> and <b>focused</b>, I strive to keep learning and bettering myself. I am extremely <b>organized</b> and <b>pragmatic</b>.I truly love to solve problems, especially if it is the right one.</p>
+						<p class="transition">I am <b>immensely curious</b> and <b>focused</b>, I strive to keep learning and bettering myself. I am extremely <b>organized</b> and <b>pragmatic</b>.</p>
+						<p class="transition">I truly love to solve problems, especially if it is the right one.</p>
 					</div> 
 				</div>
 			</div>
