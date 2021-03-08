@@ -23,12 +23,6 @@ section {
 		@include mq('tablet') {
 			align-items: flex-end;
 		}
-
-
-	@include mq('desktop-wide'){
-		padding-left: 300px;
-		padding-right: 300px;
-	}
 }
 
 

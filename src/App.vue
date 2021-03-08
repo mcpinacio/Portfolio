@@ -73,7 +73,7 @@ section {
   }
 
   @include mq('desktop-super-wide'){
-    padding: 100px 150px;
+    padding: 100px 300px;
   }
 }
 

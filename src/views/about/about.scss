@@ -87,7 +87,7 @@ svg {
 	}
 
 	
-	@include mq('desktop-wide'){
+	@include mq('desktop-super-wide'){
 		padding-left: 300px;
 		padding-right: 300px;
 	}
