@@ -1,7 +1,7 @@
 <template>
   <div id="home" class="home">
     <About/> 
-    <ProjectsMobile class="mobile" id="projects-mobile"/>
+    <ProjectsMobile id="projects-mobile"/>
     <Contacts/>
   </div>
 </template>
