@@ -144,12 +144,8 @@ span {
 		margin-bottom: 100px;
 	}
 
-	@include mq('desktop'){
-		margin-bottom: 180px;
-	}
-
 	@include mq('desktop-super-wide'){
-		margin-bottom: 240px;
+		margin-bottom: 180px;
 	}
 }
 
@@ -179,7 +175,7 @@ img {
 
 	@include mq('tablet-small') {
 		width: 60%;
-		margin-bottom: 100px;
+		margin-bottom: none;
 
 	}
 }
