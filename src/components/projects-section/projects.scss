@@ -1,7 +1,13 @@
 @import 'src/assets/variables.scss';
 @import 'src/assets/fonts.scss';
 
-.projects-section {
+.projects {
+	width: 100%;
+
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+	justify-content: space-between;
 
 	a {
 		text-decoration: none;
@@ -9,12 +15,6 @@
 }
 
 .block {
-	width: 100%;
-
-	display: flex;
-	flex-flow: row wrap;
-	align-content: center;
-	justify-content: space-between;
 
 	transition: all 0.5s ease;
 

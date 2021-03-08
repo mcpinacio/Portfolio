@@ -67,12 +67,7 @@ section {
     padding: 80px 120px;
   }
 
-  @include mq('desktop'){
-    //margin-top: 55px;
-    height: 92vh;
-  }
-
-  @include mq('desktop-super-wide'){
+  @include mq('desktop-wide'){
     padding: 100px 300px;
   }
 }

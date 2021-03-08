@@ -18,7 +18,7 @@
 				</router-link>
 
 				<button
-					v-on:click.prevent="goToSection('projects-mobile')">Projects</button>
+					v-on:click.prevent="goToSection('projects')">Projects</button>
 
 				<button href="#"
 				   v-on:click.prevent="goToSection('contacts')">

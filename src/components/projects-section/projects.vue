@@ -1,5 +1,5 @@
 <template>
-	<section class="projects-section">
+	<section class="projects" id="projects">
 		<div 	class="block"
 				data-aos="fade-up"
 				data-aos-duration="850"
@@ -66,10 +66,10 @@
 	</section>
 </template>
 
-<style scoped lang="scss" src="./projects-section-mobile.scss"/>
+<style scoped lang="scss" src="./projects.scss"/>
 
 <script>
 	export default {
-		name: 'ProjectsMobile'
+		name: 'Projects'
 	}
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div id="home" class="home">
     <About/> 
-    <ProjectsMobile id="projects-mobile"/>
+    <Projects/>
     <Contacts/>
   </div>
 </template>
@@ -9,7 +9,7 @@
 <style scoped lang="scss" src='./home.scss'/>
 
 <script>
-import ProjectsMobile from '@/components/projects-section/projects_mobile.vue'
+import Projects from '@/components/projects-section/projects.vue'
 import About from '@/components/about/about.vue'
 import Contacts from '@/components/contacts/contacts.vue'
 
@@ -17,7 +17,7 @@ export default {
   name: 'home',
   components: {
     Contacts,
-    ProjectsMobile,
+    Projects,
     About
   }
 }
