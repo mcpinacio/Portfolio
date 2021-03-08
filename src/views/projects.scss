@@ -113,7 +113,7 @@ a {
 	@include mq('desktop'){
 		padding: 60px 220px;
 	}
-	@include mq('desktop-super-wide'){
+	@include mq('desktop-wide'){
 		padding: 60px 600px;
 	}
 
