@@ -137,9 +137,8 @@ span {
 	width: 100%;
 	margin-bottom: 50px;
 	
-
 	@include mq('tablet-wide') {
-		flex-flow: column wrap;
+		flex-flow: column wrap !important;
 		margin-bottom: 100px;
 	}
 }
@@ -168,10 +167,9 @@ img {
 	width: 100%;
 	margin-bottom: 80px;
 
-	@include mq('tablet-small') {
+	@include mq('tablet') {
 		width: 60%;
 		margin-bottom: none;
-
 	}
 }
 
