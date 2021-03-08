@@ -114,11 +114,9 @@ a {
 		padding: 60px 220px;
 	}
 	@include mq('desktop-super-wide'){
-		padding: 60px 330px;
+		padding: 60px 600px;
 	}
-	@include mq('desktop-super-wide'){
-		padding: 60px 330px;
-	}	
+
 }
 
 /*------------------------------------*/

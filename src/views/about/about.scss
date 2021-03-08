@@ -86,11 +86,9 @@ svg {
 		padding: 0px 220px;
 	}
 	@include mq('desktop-super-wide'){
-		padding: 0px 330px;
+		padding: 0px 600px;
 	}
-	@include mq('desktop-super-wide'){
-		padding: 0px 330px;
-	}	
+
 }
 
 span {
@@ -139,13 +137,9 @@ span {
 	margin-bottom: 50px;
 	
 
-	@include mq('table-wide') {
+	@include mq('tablet-wide') {
 		flex-flow: column wrap;
 		margin-bottom: 100px;
-	}
-
-	@include mq('desktop-super-wide'){
-		margin-bottom: 180px;
 	}
 }
 

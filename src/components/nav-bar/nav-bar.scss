@@ -39,7 +39,12 @@ nav {
 		padding: 0 70px;
 
 		height: 55px;
-	}	
+	}
+
+	@include mq('desktop-super-wide'){
+		padding: 0px 600px;	
+
+		height: 75px;
 }
 
 .navigation {
