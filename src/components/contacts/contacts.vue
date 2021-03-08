@@ -2,19 +2,15 @@
 	<section id="contacts" class="contacts">
 	 	<div class="text transition">
 	 	<h1 class="transition">Let's work together!</h1>
-	 	<h1>Drop me an email</h1>
+	 	<h1 class="cl-effect-3 transition">Drop me an <a href="mailto:mcpinacio@gmail.com"><h1>email</h1></a></h1>
 	 </div>
 
-	 	<div class="links transition cl-effect-3">
-	 		<div class="email">
-	 			<a class="cl-effect-3" href="mailto:mcpinacio@gmail.com">mcpinacio@gmail.com</a>
-	 		</div>
-	 		
+	 	<div class="links transition"> 		
 	 		<div class="social cl-effect-3 transition">
 	 			<a href="https://www.behance.net/marianacpinacio" target="_blank">Behance</a>
-	 			<a class="transition" href="https://dribbble.com/mcpinacio" target="_blank">Dribbble</a>
-	 			<a class="transition" href="https://www.linkedin.com/in/mariana-pereira-inacio/" target="_blank">Linkedin</a>
-	 			<a class="transition" href="https://github.com/mcpinacio" target="_blank">GitHub</a>
+	 			<a href="https://dribbble.com/mcpinacio" target="_blank">Dribbble</a>
+	 			<a href="https://www.linkedin.com/in/mariana-pereira-inacio/" target="_blank">Linkedin</a>
+	 			<a href="https://github.com/mcpinacio" target="_blank">GitHub</a>
 	 		</div>
 	 		<div class="icons">
 	 			<a href="https://www.behance.net/marianacpinacio" id="behance"  target="_blank">

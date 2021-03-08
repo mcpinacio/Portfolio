@@ -48,7 +48,7 @@ html, body{
   color: #10223C;
 }
 
-.about, .contacts {
+.about {
 
     @include mq('tablet-small'){
     height: 100vh;
