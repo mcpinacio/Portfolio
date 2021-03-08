@@ -48,10 +48,6 @@ section {
 
 h1 {
 	width: 100%;
-
-	@include mq('tablet'){
-		width: 70%;
-	}
 }
 
 
