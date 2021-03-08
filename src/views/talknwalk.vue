@@ -37,11 +37,12 @@
 					<div class="text transition">
 						<p class="transition">Talknwalk was developed during a three-week sprint for an academic project. It was developed by a multidisciplinary team, made by designers, illustrators, developers, animators, photographers and journalists.</p>
 						<p>The project aim was to create an app that would breach the gap between people suffering from mental health problems and therapists, specifically in Portugal. A country where there is still a lot of stigma associated with mental health, patients often must rely on private practices to have access to a therapist which can be financially strenuous for someone who is on a budget. Thus TalknWalk offers benefits for both patients and therapists.</p>
-						<p>Therapists have access to a wider range of patients, the secure video-calls and chats allow them to work remotely thus being more independent and reducing commute and space renting costs, the therapists has access to information prior to the first interaction with the patient, if the later wishes so, making the diagnosis and therapy more efficient</p>
-						<p>Patients have access to a list of therapists with whom they can start chatting or video-call, enabling the former to try out different types of therapy, effortlessly finding a therapist that fits their budget and reducing the expenses of commuting. This type of user also has access to a chat bot that track their mood and offers statistics of their symptoms and as the user interacts with the app, their profile while become more robust allowing for AI to send them personalized recommendations, articles and mood boosters.</p>
-						<p>It was important to keep the design clean and simple, highlighting the main features both for therapists and patients. Keeping in mind that privacy is an imperative, every interaction between therapists and patients and with the app is confidential.</p>
-						<p>The project's most challenging aspect was the time constraint, we had little to no time to research jumping straight to action. However, this was the first time I had work with such a big team, it was easier than I anticipated and it allowed me to share some of the responsibility, for example deciding on which colours and fonts to use.</p>
-
+						<p v-bind:class="{desktop : desktop}">Therapists have access to a wider range of patients, the secure video-calls and chats allow them to work remotely thus being more independent and reducing commute and space renting costs, the therapists has access to information prior to the first interaction with the patient, if the later wishes so, making the diagnosis and therapy more efficient.</p>
+						<p v-bind:class="{desktop:desktop}">Patients have access to a list of therapists with whom they can start chatting or video-call, enabling the former to try out different types of therapy, effortlessly finding a therapist that fits their budget and reducing the expenses of commuting. This type of user also has access to a chat bot that track their mood and offers statistics of their symptoms and as the user interacts with the app, their profile while become more robust allowing for AI to send them personalized recommendations, articles and mood boosters.</p>
+						<p v-bind:class="{desktop:desktop}">It was important to keep the design clean and simple, highlighting the main features both for therapists and patients. Keeping in mind that privacy is an imperative, every interaction between therapists and patients and with the app is confidential.</p>
+						<p v-bind:class="{desktop:desktop}">The project's most challenging aspect was the time constraint, we had little to no time to research jumping straight to action. However, this was the first time I had work with such a big team, it was easier than I anticipated and it allowed me to share some of the responsibility, for example deciding on which colours and fonts to use.</p>
+						<button v-on:click="desktop = !desktop"
+						class="mobile">Read More</button>
 					</div>
 				</div>
 			</div>
@@ -109,6 +110,19 @@
 	export default {
 	  name: 'TalknWalk',
 	  props: {
+	  },
+	  data: {
+	  	desktop: true,
+	  },
+	  methods: {
+
+	  },
+	  computed: {
+	  	compClassses: function(){
+	  		return {
+	  			desktop: this.desktop,
+	  		}
+	  	}
 	  }
 	}
 </script>

@@ -4,7 +4,7 @@
            ref="container">
     <div class="container">
       <div class="text">
-          <h1>Hi, I'm Mariana!<br>A UX/UI Designer, who wants to become a unicorn!</h1>
+          <h1>Hi, I'm Mariana!<br>A problem solver who happens to be a UX/UI Designer</h1>
 
 <!--           <router-link to="/about">
             <button>about me</button>

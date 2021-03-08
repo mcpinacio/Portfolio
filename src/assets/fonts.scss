@@ -2,7 +2,7 @@
 
 //fonts
 $accent-font: 'Montserrat', sans-serif;
-$normal-font: 'Muli', sans-serif;
+$normal-font: 'Open Sans', sans-serif;
 
 @mixin accent-bold {
 	font-family: 'Montserrat', sans-serif;
@@ -23,13 +23,13 @@ $normal-font: 'Muli', sans-serif;
 }
 
 @mixin light-font {
-    font-family: 'Muli', sans-serif;
-    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     color: $normal-colour;
 }
 
 @mixin text {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: $normal-colour;
 }

@@ -18,15 +18,11 @@
 				<div class="description transition">
 
 					<div class="text">
-						<h2 class=" transition">Hi, my name is Mariana Inácio and I want to be an unicorn.</h2>
-						<p class="transition">“A unicorn? What a strange thing to aspire to!” you might think.</p>
-						<p class="transition">Although there are plenty of mythical creatures to look up to, but “unicorn” is the nickname often given to designers who know how to code and that’s exactly who I want to become.</p>
-						<p class="transition">I studied Multimedia Arts (Interactive Environments) at Faculdade de Belas Artes da Universidade de Lisboa, which awoken my love for art and art history and sparked my interest in programming.</p>
-						<p class="transition">As much as I love art and perceive it as means to express myself, I also <b>love to solve problems</b>, so I resorted to Design to satisfy this need. Consequently, I took a postgraduate degree in Digital Design at DeMonfort University in Leicester, in the UK.</p>
-						<p class="transition">I am <b>immensely curious</b> and strive to keep learning and bettering myself, so I enrolled in a yearlong Web Design course where I am learning about not only how to design a web site but how to code it (HTML/CSS/javascript), a skill that I am very keen on keep working on, even if self-taught.</p>
-						<p class="transition">What excites me the most about UX/UI Design and programming is the challenge of creating an user experience that is cohesive, simple and intuitive.
-						I am very <b>independent</b>, <b>pro-active</b> and <b>pragmatic</b>. I strive when challenged and I keep pushing myself outside of my comfort zone.</p>
-					</div>
+						<h2 class=" transition">Hi, my name is Mariana Inácio a UX/UI designer based in Lisbon.</h2>
+						<p class="transition">I love fine art and beautiful design. However, UX/UI design is more than creating beautiful products, it is about creating <b>consistent experiences</b> that are easy to use and allow the end user to feel confident using a specific product. </p>
+						<p class="transition">I believe that my role as a designer is to be the voice of the end user and that the best way to understand if I’m solving the <b>right problem</b> and solving it well enough is through design research, may it be user testing or analytics reports.</p>
+						<p class="transition">I am <b>immensely curious</b> and <b>focused</b>, I strive to keep learning and bettering myself. I am extremely <b>organized</b> and <b>pragmatic</b>.I truly love to solve problems, especially if it is the right one.</p>
+					</div> 
 				</div>
 
 					<div class="more">
@@ -35,6 +31,11 @@
 						</div>
 
 						<div class="work">
+							<div class="job">
+								<h3>UX/UI Designer</h3>
+								<p class="none">NOESIS Contractor at NOS SGPS</p>
+								<p class="none">September 2019 to Present</p>
+							</div>
 							<div class="job">
 								<h3>UX/UI Designer</h3>
 								<p class="none">IRON Portugal</p>

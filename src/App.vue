@@ -25,7 +25,7 @@ export default {
 <style lang="scss">
 @import 'src/assets/variables.scss';
 @import 'src/assets/fonts.scss';
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Muli:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap');
 
 *,
 *:after,
@@ -41,7 +41,7 @@ html, body{
 }
 
 #app {
-  font-family: 'Muli', 'Montserrat', sans-serif;
+  font-family: 'Open Sans', 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
