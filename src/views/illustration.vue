@@ -1,20 +1,20 @@
 <template>
 	<div>
-		<div class="banner" id="game">
-				<h1 class="transition">PopCulture</h1>
-				<h3 class="transition">Illustration 2017 to present</h3>		
+		<div class="banner transition" id="game">
+				<h1>PopCulture</h1>
+				<h3>Illustration 2017 to present</h3>		
 		</div>
 
 	<div class="container transition">
-		<div class="projects transition">
-				<div class="header transition">
+		<div class="projects">
+				<div class="header ">
 					<h2>Monochromatic portraits influenced by the colour field art movement</h2>
 				</div>
 			
 			<div class="description  transition">
-				<div class="text full transition">
-					<p class="transition">Inspired by colour field art movement, I allied its usage of big flat surfaces of solid colour to a high-contrast and vectoral art style.</p>
-					<p class="transition">One of the main challenges of creating high-contrast portraits is how to work the light and shadows without losing the distinguishable features that make each person portraited unique and recognisable.</p>
+				<div class="text_full">
+					<p>Inspired by colour field art movement, I allied its usage of big flat surfaces of solid colour to a high-contrast and vectoral art style.</p>
+					<p>One of the main challenges of creating high-contrast portraits is how to work the light and shadows without losing the distinguishable features that make each person portraited unique and recognisable.</p>
 				</div>
 			</div>
 		</div>

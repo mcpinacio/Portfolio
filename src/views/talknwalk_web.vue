@@ -8,7 +8,7 @@
 		<div class="container transition">
 			<div class="projects transition">
 				<div class="header transition">
-					<h2>A mental health app designed to connect patients and therapists more efficiently</h2>
+					<h2>A mental health app designed to bring together patients and therapists</h2>
 				</div>
 
 				<div class="description  transition">
